@@ -1,0 +1,19 @@
+{
+  "name": "kamo",
+  "version": "1.0.0",
+  "description": "Kamo Eventos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianeto/kamo-events.git"
+  },
+  "author": "pub creativo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianeto/kamo-events/issues"
+  },
+  "homepage": "https://github.com/brianeto/kamo-events#readme"
+}
