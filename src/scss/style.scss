@@ -1,0 +1,12 @@
+@import "_variables.scss";
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../img/bg-intro.png);
+    color: $white;
+}

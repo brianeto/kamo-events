@@ -1,0 +1,24 @@
+.btn {
+  width: 869px;
+  height: 61px;
+  border-radius: 31px;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
+  background-image: linear-gradient(255deg, #7b23c8, #880f6c);
+}
+
+.hero {
+  color: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  background-image: url(../img/bg-intro.png);
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

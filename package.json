@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/brianeto/kamo-events/issues"
   },
-  "homepage": "https://github.com/brianeto/kamo-events#readme"
+  "homepage": "https://github.com/brianeto/kamo-events#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
 }
