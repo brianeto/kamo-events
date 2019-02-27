@@ -1,9 +1,13 @@
 .btn {
-  width: 869px;
-  height: 61px;
+  width: 200px;
+  height: 50px;
   border-radius: 31px;
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
   background-image: linear-gradient(255deg, #7b23c8, #880f6c);
+  color: #ffffff;
+}
+.btn:hover {
+  color: #000000;
 }
 
 @font-face {
@@ -30,17 +34,45 @@ button {
   font-family: JosefinSans;
 }
 
+.slick-dots {
+  text-align: center;
+  padding-top: 15px;
+  bottom: -150px;
+}
+.slick-dots li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+}
+.slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #880f6c;
+  box-shadow: 0 0 0 0 transparent;
+  vertical-align: middle;
+  color: #880f6c;
+  background-color: #880f6c;
+  transition: all 0.3s ease;
+  opacity: 0.4;
+}
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover {
+  opacity: 1;
+}
+.slick-dots li.slick-active button {
+  border-color: #000000;
+  box-shadow: 0 0 0 2px #880f6c;
+  opacity: 1;
+}
+
 body {
   width: 100%;
   height: 100%;
-}
-
-.hero {
-  display: flex;
-  background-image: url(../img/bg-intro.png);
-  text-align: center;
-  flex-direction: row;
-  color: #ffffff;
 }
 
 .container {
@@ -49,6 +81,60 @@ body {
   margin-right: auto;
   max-width: 1200px;
   padding: 15rem;
+}
+
+.hero {
+  background-image: url(../img/bg-intro.png);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.hero-logo {
+  cursor: pointer;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.hero-menu {
+  cursor: pointer;
+  font-size: 2em;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.hero-title h2 {
+  font-size: 60px;
+}
+.hero-subtitle {
+  padding: 3rem 0;
+}
+.hero-subtitle h5 {
+  font-size: 16px;
+}
+
+.about-us {
+  padding: 0;
+  display: flex;
+}
+.about-us-left-img {
+  padding: 0;
+}
+.about-us-left-img img {
+  width: 100%;
+}
+.about-us-right-content {
+  background-color: #2a0041;
+}
+.about-us-right-content .container {
+  padding: 15rem 5rem;
+}
+.about-us-right-content h2 {
+  font-size: 60px;
+  color: #a623cc;
+}
+.about-us-right-content p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */

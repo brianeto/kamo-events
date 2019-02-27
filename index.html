@@ -7,16 +7,21 @@
     <title>Kamo</title>
     <link href="src/css/bootstrap.css" rel="stylesheet">
     <link href="src/css/fontawesome-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css"/>   
     <link href="src/css/style.css" rel="stylesheet">
 </head>
 <body>
     <section class="hero">
         <div class="container">
-            <div class="hero-logo col-2">
-                <img src="src/img/Logo Kamo blanco.png" alt="">
+            <div class="hero-logo">
+                <img src="src/img/Logo Kamo blanco.png" alt="logo-kamo">
             </div>
-            <div class="hero-menu"></div>
-            <div class="hero-title white">
+            <div class="hero-menu">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="hero-title">
                 <h2 class="">VIVE UNA NUEVA EXPERIENCIA</h2>
             </div>
             <div class="hero-subtitle">
@@ -27,8 +32,36 @@
             </div>
         </div>
     </section>
-    <section class="about-us"></section>
-    <section class="features"></section>
+    <section class="about-us col-lg-12">
+        <div class="about-us-left-img col-lg-6">
+            <img src="src/img/bg-left-1.jpg" alt="bg-left">
+        </div>
+        <div class="about-us-right-content col-lg-6">
+            <div class="container">
+                <div class="your-class">
+                    <div>
+                        <h2>SOBRE NOSOTROS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla illum quasi perferendis rerum quibusdam minima earum unde, ab, provident minus qui repellendus voluptatibus natus, sit hic aspernatur quam asperiores.</p>
+                    </div>
+                    <div>
+                        <h2>SOBRE NOSOTROSx2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae!</p>
+                    </div>
+                    <div>
+                        <h2>SOBRE NOSOTROSx3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features col-lg-12">
+        <div class="container">
+            <div class="features-experiencia"></div>
+            <div class="features-responsabilidad"></div>
+            <div class="features-alegria"></div>
+        </div>
+    </section>
     <section class="our-services"></section>
     <section class="gallery"></section>
     <section class="testimonies"></section>
@@ -36,5 +69,18 @@
     <footer></footer>
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap.js"></script>
+    <script type="text/javascript" src="src/js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            infinite: false,
+            speed: 300
+          });
+        });
+      </script>
 </body>
 </html>

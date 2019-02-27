@@ -1,18 +1,11 @@
 @import "_variables.scss";
 @import "_typography.scss";
+@import "_slick-slider.scss";
 
 
 body {
     width: 100%;
     height: 100%;
-}
-
-.hero {
-    display: flex;
-    background-image: url(../img/bg-intro.png);
-    text-align: center;
-    flex-direction: row;
-    color: $white;
 }
 .container {
     width: 100%;
@@ -20,4 +13,60 @@ body {
     margin-right: auto;
     max-width: 1200px;
     padding: 15rem;
+}
+
+.hero {
+    background-image: url(../img/bg-intro.png);
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    &-logo {
+        cursor: pointer;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+    }
+    &-menu {
+        cursor: pointer;
+        font-size: 2em;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+    &-title {
+
+        h2 {
+            font-size: 60px;
+        }
+    }
+    &-subtitle {
+        padding: 3rem 0;
+        h5 {
+            font-size: 16px;
+        }
+    }
+}
+.about-us {
+    padding: 0;
+    display: flex;
+    &-left-img {
+        padding: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &-right-content {
+        background-color: $dark-purple;
+        .container{
+            padding: 15rem 5rem;
+        }
+        h2 {
+            font-size: 60px;
+            color: $main-pink;
+        }
+        p {
+            color: $transparent-gray;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 //Colors
 $white: #ffffff;
+$black: #000000;
 $transparent-gray: rgba(255, 255, 255, 0.6);
 $main-pink: #a623cc;
 $dark-pink: #7a1153;
@@ -9,9 +10,13 @@ $light-purple: #7b23c8;
 
 // Button Style
 .btn {
-    width: 869px;
-    height: 61px;
+    width: 200px;
+    height: 50px;
     border-radius: 31px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
     background-image: linear-gradient(255deg, #7b23c8, #880f6c);
+    color: $white;
+    &:hover{
+        color: $black;
+    }
 }
