@@ -10,9 +10,9 @@ body {
 .hero {
     display: flex;
     background-image: url(../img/bg-intro.png);
-    color: $white;
     text-align: center;
     flex-direction: row;
+    color: $white;
 }
 .container {
     width: 100%;

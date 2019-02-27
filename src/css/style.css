@@ -6,10 +6,6 @@
   background-image: linear-gradient(255deg, #7b23c8, #880f6c);
 }
 
-.hero {
-  color: #ffffff;
-}
-
 @font-face {
   font-family: JosefinSansBold;
   src: url(../fonts/JosefinSans-Bold.ttf);
@@ -42,9 +38,9 @@ body {
 .hero {
   display: flex;
   background-image: url(../img/bg-intro.png);
-  color: #ffffff;
   text-align: center;
   flex-direction: row;
+  color: #ffffff;
 }
 
 .container {
