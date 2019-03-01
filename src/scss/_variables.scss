@@ -2,20 +2,36 @@
 $white: #ffffff;
 $black: #000000;
 $transparent-gray: rgba(255, 255, 255, 0.6);
+$gray: #848484;
 $main-pink: #a623cc;
 $dark-pink: #7a1153;
 $link-pink:#880f6c;
 $dark-purple: #2a0041;
 $light-purple: #7b23c8;
 
-// Button Style
-.btn {
+// Button Styles
+.btn-pink {
     width: 200px;
     height: 50px;
     border-radius: 31px;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
     background-image: linear-gradient(255deg, #7b23c8, #880f6c);
     color: $white;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        color: $black;
+    }
+}
+.btn-green {
+    width: 200px;
+    height: 50px;
+    border-radius: 31px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
+    background-image: linear-gradient(255deg, #1ea27c, #209e3d);
+    color: $white;
+    cursor: pointer;
+    border: none;
     &:hover{
         color: $black;
     }
