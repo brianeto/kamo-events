@@ -108,7 +108,18 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
-  height: 720px;
+  height: 800px;
+  position: relative;
+  z-index: 3;
+}
+.hero-div-diagonal {
+  position: absolute;
+  width: 150%;
+  left: 0;
+  bottom: 0;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 .hero .container {
   position: absolute;
@@ -249,7 +260,7 @@ body {
 }
 
 .gallery {
-  padding: 6rem 8rem;
+  padding: 0;
 }
 .gallery-first-row img {
   width: 100%;
