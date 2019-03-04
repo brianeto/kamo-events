@@ -13,17 +13,38 @@
     <link href="src/css/style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="header-logo">
+            <img src="src/img/Logo Kamo blanco.png" alt="logo-kamo">
+        </div>
+        <div class="header-menu">
+            <i class="fas fa-ellipsis-v"></i>
+            <nav class="header-menu-nav">
+                <div class="header-menu-nav-container">
+                    <div class="header-menu-nav-container-hover"></div>
+                    <li>INICIO</li>
+                    <li>SOBRE NOSOTROS</li>
+                    <li>SERVICIOS</li>
+                    <li>ALQUILER DE EQUIPOS</li>
+                    <li>GALERÍA</li>
+                    <li>TESTIMONIOS</li>
+                    <li>BLOG</li>
+                    <li>CONTÁCTANOS</li>
+                    <div class="header-menu-nav-container-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="hero d-flex position-relative align-items-center">
         <div class="hero-div-diagonal"></div>
         <div class="container-fluid">
-            <div class="hero-logo">
-                <img src="src/img/Logo Kamo blanco.png" alt="logo-kamo">
-            </div>
-            <div class="hero-menu">
-                <i class="fas fa-ellipsis-v"></i>
-            </div>
             <div class="hero-title">
-                <h2 class="">VIVE UNA NUEVA EXPERIENCIA</h2>
+                <h2 class="">VIVE UNA NUEVA<br>EXPERIENCIA</h2>
             </div>
              <div class="hero-subtitle">
                 <h5>En Kamo Eventos hacemos que tu fiesta sea una experiencia inolvidable, con equipos de alta tecnología y personal experto en la planeación y ejecución de eventos</h5>
@@ -177,27 +198,6 @@
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap.js"></script>
     <script type="text/javascript" src="src/js/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('.your-class').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            infinite: false,
-            speed: 300
-          });
-        });
-        $(document).ready(function(){
-          $('.your-gallery').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            infinite: false,
-            speed: 300
-          });
-        });
-      </script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
