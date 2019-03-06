@@ -191,6 +191,7 @@ header .header-menu-nav-container-social i:hover {
   height: 800px;
   position: relative;
   z-index: 3;
+  overflow: hidden;
 }
 .hero-div-diagonal {
   position: absolute;
