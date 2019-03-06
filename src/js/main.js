@@ -13,7 +13,8 @@ $(document).ready(function(){
 jQuery(function(){
 
     jQuery('.center').slick({
-        slidesToShow: 3
+        slidesToShow: 3,
+        dots:true
       });
 
 });
@@ -23,7 +24,7 @@ jQuery(function(){
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
-        arrows: false,
+        arrows: true,
         responsive: [
           {
             breakpoint: 768,

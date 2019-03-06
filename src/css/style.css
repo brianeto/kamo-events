@@ -55,7 +55,7 @@ h2 {
   color: #a623cc;
 }
 
-h3, h4, h5 {
+span, a, h3, h4, h5 {
   font-family: Sarabun;
 }
 
@@ -199,7 +199,7 @@ header .header-menu-nav-container-social i:hover {
   left: 0;
   bottom: 0;
   height: 800px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 1, 45, 0.78);
   z-index: -1;
 }
 .hero .container {
@@ -217,6 +217,7 @@ header .header-menu-nav-container-social i:hover {
   display: flex;
 }
 .about-us-left-img {
+  background-image: url(../img/bg-left-1.jpg);
   padding: 0;
 }
 .about-us-left-img img {
@@ -233,7 +234,7 @@ header .header-menu-nav-container-social i:hover {
 }
 
 .features {
-  padding: 6rem 8rem;
+  padding: 6rem 11rem;
 }
 .features h6 {
   font-family: JosefinSansBold;
@@ -246,6 +247,15 @@ header .header-menu-nav-container-social i:hover {
 .features img {
   color: #7a1153;
   width: 60px;
+}
+.features-experiencia {
+  max-width: 25rem;
+}
+.features-responsabilidad {
+  max-width: 25rem;
+}
+.features-alegria {
+  max-width: 25rem;
 }
 
 .our-services {
@@ -325,6 +335,9 @@ header .header-menu-nav-container-social i:hover {
   background-image: url(/src/img/gallery1.png);
 }
 
+.gallery .center .slick-dots {
+  bottom: -70px;
+}
 .gallery h2 {
   color: #2a0041;
 }
@@ -376,19 +389,48 @@ figcaption .fa-search-plus {
   width: 400px;
 }
 
-.container .card {
+.testimonies .container .card {
   padding: 10px;
   margin: 0 15px;
   position: unset;
 }
-.container .card_img {
-  dsiplay: inline-block;
+.testimonies .container .card_img {
+  display: inline-block;
   width: 200px;
   height: 200px;
 }
-
-.slick-active.slick-current .card_img {
+.testimonies .slick-active.slick-current .card_img {
   position: relative;
+}
+
+.contact {
+  padding: 0;
+  display: flex;
+}
+.contact-left-img {
+  background-image: url(../img/bg-left-1.jpg);
+}
+.contact-left-img .container {
+  padding: 15rem;
+}
+.contact-left-img img {
+  width: 50%;
+}
+.contact-left-img-content {
+  background: -moz-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2a0041", endColorstr="#ab7a1153",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.contact-right-content .container {
+  padding: 15rem 5rem;
+}
+.contact-right-content p {
+  color: #848484;
 }
 
 /*# sourceMappingURL=style.css.map */

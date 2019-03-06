@@ -106,7 +106,7 @@ header {
         left: 0;
         bottom: 0;
         height: 800px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(34, 1, 45, 0.78);
         z-index: -1;
     }
     .container {
@@ -123,6 +123,7 @@ header {
     padding: 0;
     display: flex;
     &-left-img {
+        background-image: url(../img/bg-left-1.jpg);
         padding: 0;
         img {
             width: 100%;
@@ -139,7 +140,7 @@ header {
     }
 }
 .features {
-    padding: 6rem 8rem;
+    padding: 6rem 11rem;
     h6 {
         font-family: JosefinSansBold;
         font-size: 23px;
@@ -151,6 +152,15 @@ header {
     img{
         color: $dark-pink;
         width: 60px;
+    }
+    &-experiencia {
+        max-width: 25rem;
+    }
+    &-responsabilidad {
+        max-width: 25rem;
+    }
+    &-alegria {
+        max-width: 25rem;
     }
 }
 
@@ -233,6 +243,11 @@ header {
     background-image: url(/src/img/gallery1.png)
 }
 .gallery{
+    .center {
+        .slick-dots {
+            bottom: -70px;
+        }
+    }
     h2 {
         color: $dark-purple;
     }
@@ -280,23 +295,54 @@ figcaption{
     }
 }
 
-.container {
-  .card {
-    padding: 10px;
-    margin: 0 15px;
-    position: unset;
-  }
-  .card_img {
-    dsiplay: inline-block;
-    width: 200px;
-    height: 200px;
+.testimonies {
+    .container {
+        .card {
+          padding: 10px;
+          margin: 0 15px;
+          position: unset;
+        }
+        .card_img {
+          display: inline-block;
+          width: 200px;
+          height: 200px;
+            }
+      }
+      .slick-active.slick-current {
+        .card {
+          
+        }
+        .card_img {
+          position: relative
+        }
       }
 }
-.slick-active.slick-current {
-  .card {
-    
-  }
-  .card_img {
-    position: relative
-  }
+
+.contact {
+    padding: 0;
+    display: flex;
+    &-left-img {
+        background-image: url(../img/bg-left-1.jpg);
+        .container{
+            padding: 15rem;
+        }
+        img {
+            width: 50%;
+        }
+        &-content {
+            background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            
+        }
+    }
+    &-right-content {
+        .container{
+            padding: 15rem 5rem;
+        }
+        p {
+            color: $gray;
+        }
+    }
 }
