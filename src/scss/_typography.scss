@@ -20,9 +20,16 @@ h2 {
     font-size: 60px;
     color: $main-pink;
 }
-span, a, h3, h4, h5 {
+span, h3, h4, h5, h6 {
     font-family: Sarabun;
 }
 button,li {
     font-family: JosefinSans;
+}
+a{
+    color: $link-pink;
+    &:hover {
+        color: $dark-pink;
+        text-decoration: none;
+    }
 }

@@ -22,9 +22,10 @@ jQuery(function(){
 
     $('.pop').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '10px',
         slidesToShow: 1,
         arrows: true,
+        dots: true,
         responsive: [
           {
             breakpoint: 768,

@@ -154,13 +154,13 @@ header {
         width: 60px;
     }
     &-experiencia {
-        max-width: 25rem;
+        max-width: 30rem;
     }
     &-responsabilidad {
-        max-width: 25rem;
+        max-width: 30rem;
     }
     &-alegria {
-        max-width: 25rem;
+        max-width: 30rem;
     }
 }
 
@@ -242,6 +242,7 @@ header {
     z-index: 3;
     background-image: url(/src/img/gallery1.png)
 }
+
 .gallery{
     .center {
         .slick-dots {
@@ -289,24 +290,38 @@ figcaption{
 
 .testimonies {
     background: $dark-purple;
-    &-img {
-        border-radius: 100%;
-        width: 400px;
-    }
-}
-
-.testimonies {
     .container {
-        .card {
-          padding: 10px;
-          margin: 0 15px;
-          position: unset;
+        padding: 10rem 15rem;
+        .slick-dots {
+            bottom: -50px;
         }
-        .card_img {
-          display: inline-block;
-          width: 200px;
-          height: 200px;
+        .card {
+            background: none;
+            padding: 10px;
+            margin: 0 15px;
+            border: none;
+            padding: 6rem;
+            &-img {
+                display: inline-block;
+                width: 200px;
+                height: 200px;
             }
+            &-block {
+                h4 {
+                    font-family: JosefinSans;
+                    color: $white;
+                    padding-top: 1.5rem;
+                }
+                span {
+                    color: $main-pink;
+                }
+                p {
+                    padding-top: 1rem;
+                    color: $transparent-gray;
+                }
+            }
+        }
+
       }
       .slick-active.slick-current {
         .card {
@@ -322,13 +337,36 @@ figcaption{
     padding: 0;
     display: flex;
     &-left-img {
-        background-image: url(../img/bg-left-1.jpg);
-        .container{
-            padding: 15rem;
+        background-image: url(../img/bg-left-contact.png);
+        padding: 0;
+        &-container{
+            padding: 3rem;
+            background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+            margin: 8rem;
+            img {
+                width: 50%;
+            }
+            i {
+                font-size: 25px;
+                color: $white;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-family: Sarabun;
+            }
+            .text-center {
+                margin-bottom: 5rem;
+            }
+            .text-left {
+                margin: 1rem;
+                i {
+                    padding: 12px;
+                }
+            }
         }
-        img {
-            width: 50%;
-        }
+
         &-content {
             background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -340,9 +378,45 @@ figcaption{
     &-right-content {
         .container{
             padding: 15rem 5rem;
+            h2 {
+                color: $dark-purple
+            }
+            p {
+                color: $gray;
+            }
         }
-        p {
-            color: $gray;
-        }
+
     }
 }
+
+footer {
+    background: $black;
+    .footer-xd {
+        padding: 40px;
+    
+    }
+}
+.slick-prev:before {
+    content: '<';
+}
+.slick-next:before {
+    content: '>';
+}
+button.slick-next, button.slick-next:hover {
+    right: 15px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  button.slick-prev, button.slick-prev:hover {
+    left: 15px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: $white;
+    font-weight: bold;
+    z-index: 23;
+  }
