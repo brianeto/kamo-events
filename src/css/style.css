@@ -545,4 +545,57 @@ button.slick-prev, button.slick-prev:hover {
   z-index: 23;
 }
 
+/*SONIDO PAGE*/
+.video {
+  position: relative;
+}
+.video-container {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -560px;
+  margin-top: -200px;
+  z-index: 32;
+}
+
+.sound-features {
+  height: 1270px;
+}
+.sound-features .container {
+  padding: 0;
+}
+.sound-features-montaje {
+  display: flex;
+  margin-top: 30rem;
+}
+.sound-features-montaje-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sound-features-dj {
+  display: flex;
+  margin-top: 5rem;
+}
+.sound-features-dj-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advisory {
+  background: #2a0041;
+}
+.advisory .container {
+  padding: 10rem 15rem;
+  color: #ffffff;
+}
+.advisory .container .advisory-title h3 {
+  font-size: 40px;
+}
+.advisory .container .advisory-subtitle {
+  padding: 5px 0 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */

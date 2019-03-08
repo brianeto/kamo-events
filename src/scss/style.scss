@@ -10,7 +10,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-
 }
 .container {
     width: 100%;
@@ -449,3 +448,59 @@ button.slick-next, button.slick-next:hover {
     font-weight: bold;
     z-index: 23;
   }
+
+
+/*SONIDO PAGE*/
+.video {
+    position: relative;
+    &-container {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -560px;
+        margin-top: -200px;
+        z-index: 32;
+    }
+}
+
+.sound-features {
+    height: 1270px;
+    .container {
+        padding: 0;
+    }
+    &-montaje{
+        display: flex;
+        margin-top: 30rem;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &-dj{
+        display: flex;
+        margin-top: 5rem;
+        &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.advisory {
+    background: $dark-purple;
+    .container{
+        padding: 10rem 15rem;
+        color: $white;
+        .advisory-title {
+            h3 {
+                font-size: 40px;
+            }
+        }
+        .advisory-subtitle {
+            padding:5px 0 20px 0; 
+        }
+    }
+}

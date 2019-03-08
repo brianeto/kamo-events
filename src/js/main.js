@@ -10,6 +10,7 @@ $(document).ready(function(){
   });
 });
 
+
 jQuery(function(){
 
     jQuery('.center').slick({
@@ -71,3 +72,13 @@ $(document).ready(function(){
     });
 });
 
+/*SOUND PAGE*/
+$(document).ready(function(){
+  $('.slider-sound').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    focusOnSelect: true,
+    variableWidth: true
+  });
+});
