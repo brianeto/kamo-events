@@ -1,8 +1,16 @@
+.btn {
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
+}
+.btn-success {
+  background-image: linear-gradient(255deg, #1ea27c, #209e3d);
+}
+
 .btn-pink {
   width: 200px;
   height: 50px;
   border-radius: 31px;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
   background-image: linear-gradient(255deg, #7b23c8, #880f6c);
   color: #ffffff;
   cursor: pointer;
