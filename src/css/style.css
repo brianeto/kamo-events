@@ -107,9 +107,14 @@ a:hover {
   opacity: 1;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -435,9 +440,10 @@ figcaption .fa-search-plus {
   padding: 0;
 }
 .contact-left-img-container {
-  padding: 3rem;
+  padding: 4rem;
   background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
-  margin: 8rem;
+  margin: 5rem;
+  height: 80%;
 }
 .contact-left-img-container img {
   width: 50%;
@@ -449,7 +455,7 @@ figcaption .fa-search-plus {
 .contact-left-img-container a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Sarabun;
 }
 .contact-left-img-container .text-center {
@@ -472,13 +478,33 @@ figcaption .fa-search-plus {
   /* IE6-9 fallback on horizontal gradient */
 }
 .contact-right-content .container {
-  padding: 15rem 5rem;
+  padding: 10rem 5rem;
 }
 .contact-right-content .container h2 {
   color: #2a0041;
+  font-size: 80px;
 }
 .contact-right-content .container p {
   color: #848484;
+  padding: 20px;
+}
+.contact-right-content .container form input, .contact-right-content .container form textarea {
+  height: 55px;
+  border-radius: 41px;
+  background-color: rgba(233, 233, 233, 0.66);
+  color: #a623cc;
+  padding-left: 25px;
+}
+.contact-right-content .container form textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+.contact-right-content .container form .form-check-input {
+  height: 20px;
+  width: 20px;
+}
+.contact-right-content .container form .form-check-label {
+  padding-left: 10px;
 }
 
 footer {
@@ -486,6 +512,8 @@ footer {
 }
 footer .footer-xd {
   padding: 40px;
+  margin-left: 12%;
+  color: white;
 }
 
 .slick-prev:before {
