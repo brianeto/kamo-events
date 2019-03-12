@@ -65,19 +65,23 @@ header {
                 list-style: none;
                 font-size: 30px;
                 position: relative;
-                &-hover {
-//                    background: green;
-//                    height: 35px;
-//                    width: 5px;
-//                    position: absolute;
-//                    left: 3rem;
-                }
                 li {
                     font-size: 25px;
                     padding-top: 15px;
+                    position: relative;
                     &:hover{
                         color: $dark-pink;
+                        &:before {
+                            content: "";
+                            height: 35px;
+                            width: 5px;
+                            position: absolute;
+                            background: $dark-pink;
+                            bottom: 5px;
+                            left: -15px;
+                        }
                     }
+
                 }
                 &-social {
                     position: absolute;
@@ -85,9 +89,9 @@ header {
                     font-size: 35px;
                     i{
                         padding-right: 2rem;
-                        color: $dark-purple;
+                        color: $link-pink;
                         &:hover {
-                            color: $light-purple;
+                            color: $dark-pink;
                         }
                     }
                 }
@@ -129,6 +133,7 @@ header {
     &-left-img {
         background-image: url(../img/bg-left-1.jpg);
         padding: 0;
+        background-size: cover;
         img {
             width: 100%;
         }
@@ -145,6 +150,9 @@ header {
 }
 .features {
     padding: 6rem 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     h6 {
         font-family: JosefinSansBold;
         font-size: 23px;
@@ -343,6 +351,7 @@ figcaption{
     &-left-img {
         background-image: url(../img/bg-left-contact.png);
         padding: 0;
+        background-size: cover;
         &-container{
             padding: 4rem;
             background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
@@ -425,10 +434,28 @@ footer {
     }
 }
 .slick-prev:before {
-    content: '<';
+    content: '';
+    background-image: url(../img/left-arrow.png);
+    background-position: 46% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 .slick-next:before {
-    content: '>';
+    content: '';
+    background-image: url(../img/right-arrow.png);
+    background-position: 56% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 button.slick-next, button.slick-next:hover {
     right: 15px;
@@ -469,22 +496,28 @@ button.slick-next, button.slick-next:hover {
     .container {
         padding: 0;
     }
-    &-montaje{
+    &-montaje {
         display: flex;
         margin-top: 30rem;
         &-left {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            h2 {
+                color: $dark-purple;
+            }
         }
     }
-    &-dj{
+    &-dj {
         display: flex;
         margin-top: 5rem;
         &-right {
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        h2 {
+            color: $dark-purple;
         }
     }
 }
@@ -501,6 +534,177 @@ button.slick-next, button.slick-next:hover {
         }
         .advisory-subtitle {
             padding:5px 0 20px 0; 
+        }
+    }
+}
+
+.our-sound-services {
+    background-image: $white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    .container {
+        padding: 2rem;
+    }
+    &-subtitle {
+        padding: 1rem;
+        h5 {
+            font-size: 16px;
+            color: $transparent-gray;
+        }
+    }
+    &-options {
+        justify-content: space-between;
+        i {
+            font-size: 35px;
+            color: $dark-pink;
+        }
+        h3 {
+            font-family: JosefinSansBold;
+            font-size: 35px;
+            color: $white;
+        }
+        &-iluminacion {
+            height: 316px;
+            background: url(../img/bg-ilumination.png);
+
+            &-content {
+                padding-top: 4em;
+            }
+            &-title {
+                padding-top: 1.4rem;
+            }
+            &-button-pink{
+                padding: 1rem;;
+            }
+        }
+        &-fotografia {
+            height: 316px;
+            background: url(../img/bg-photography.png);
+            &-content {
+                padding-top: 4em;
+            }
+            &-title {
+                padding-top: 1.4rem;
+            }
+            &-button-pink{
+                padding: 1rem;;
+            }
+        }
+    }
+}
+/*ILUMINACION PAGE*/
+.video {
+    position: relative;
+    &-container {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -560px;
+        margin-top: -200px;
+        z-index: 32;
+    }
+}
+
+.ilumination-features {
+    height: 1270px;
+    .container {
+        padding: 0;
+    }
+    &-montaje {
+        display: flex;
+        margin-top: 30rem;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                color: $dark-purple;
+            }
+        }
+    }
+    &-dj {
+        display: flex;
+        margin-top: 5rem;
+        &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2 {
+            color: $dark-purple;
+        }
+    }
+}
+
+.advisory {
+    background: $dark-purple;
+    .container{
+        padding: 10rem 15rem;
+        color: $white;
+        .advisory-title {
+            h3 {
+                font-size: 40px;
+            }
+        }
+        .advisory-subtitle {
+            padding:5px 0 20px 0; 
+        }
+    }
+}
+
+.our-ilumination-services {
+    background-image: $white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    .container {
+        padding: 2rem;
+    }
+    &-subtitle {
+        padding: 1rem;
+        h5 {
+            font-size: 16px;
+            color: $transparent-gray;
+        }
+    }
+    &-options {
+        justify-content: space-between;
+        i {
+            font-size: 35px;
+            color: $dark-pink;
+        }
+        h3 {
+            font-family: JosefinSansBold;
+            font-size: 35px;
+            color: $white;
+        }
+        &-sound {
+            height: 316px;
+            background: url(../img/sound.png);
+            &-content {
+                padding-top: 4em;
+            }
+            &-title {
+                padding-top: 1.4rem;
+            }
+            &-button-pink{
+                padding: 1rem;;
+            }
+        }
+        &-fotografia {
+            height: 316px;
+            background: url(../img/bg-photography.png);
+            &-content {
+                padding-top: 4em;
+            }
+            &-title {
+                padding-top: 1.4rem;
+            }
+            &-button-pink{
+                padding: 1rem;;
+            }
         }
     }
 }
