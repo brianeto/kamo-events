@@ -6,10 +6,13 @@
 .btn-success {
   background-image: linear-gradient(255deg, #1ea27c, #209e3d);
 }
+.btn-pink {
+  background-image: linear-gradient(255deg, #7b23c8, #880f6c);
+}
 
 .btn-pink {
   width: 200px;
-  height: 50px;
+  height: 52px;
   border-radius: 31px;
   background-image: linear-gradient(255deg, #7b23c8, #880f6c);
   color: #ffffff;
@@ -17,9 +20,6 @@
   border: none;
   position: relative;
   overflow: hidden;
-}
-.btn-pink:hover {
-  color: #000000;
 }
 .btn-pink:before {
   content: "";
@@ -38,7 +38,7 @@
 
 .btn-green {
   width: 200px;
-  height: 50px;
+  height: 52px;
   border-radius: 31px;
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
   background-image: linear-gradient(255deg, #1ea27c, #209e3d);
@@ -47,9 +47,6 @@
   border: none;
   position: relative;
   overflow: hidden;
-}
-.btn-green:hover {
-  color: #000000;
 }
 .btn-green:before {
   content: "";
@@ -182,6 +179,7 @@ header {
   height: 130px;
   position: fixed;
   z-index: 214;
+  transition: all 0.3s;
 }
 header .header-logo {
   cursor: pointer;
@@ -190,6 +188,7 @@ header .header-logo {
   top: 40px;
   z-index: 20;
   position: fixed;
+  transition: all 0.3s;
 }
 header .header-logo img {
   width: 80px;
@@ -203,6 +202,7 @@ header .header-menu {
   z-index: 20;
   color: #ffffff;
   position: fixed;
+  transition: all 0.3s;
 }
 header .header-menu-nav {
   width: 485px;
@@ -427,7 +427,7 @@ figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: #ffffff;
   opacity: 0;
   background: -moz-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
   /* FF3.6-15 */
@@ -447,7 +447,7 @@ figcaption:hover .fa-search-plus {
 }
 figcaption .fa-search-plus {
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
   transform: translateY(-30px);
   transition: all 0.3s;
 }
@@ -512,7 +512,7 @@ figcaption .fa-search-plus {
   color: #ffffff;
 }
 .contact-left-img-container a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 25px;
   font-family: Sarabun;
@@ -572,7 +572,7 @@ footer {
 footer .footer-xd {
   padding: 40px;
   margin-left: 12%;
-  color: white;
+  color: #ffffff;
 }
 
 .slick-prev:before {
@@ -848,6 +848,89 @@ button.slick-prev, button.slick-prev:hover {
 }
 .our-ilumination-services-options-fotografia-button-pink {
   padding: 1rem;
+}
+
+.contact-page {
+  padding: 0;
+  display: flex;
+}
+.contact-page-left-img {
+  background-image: url(../img/bg-left-contact.png);
+  padding: 0;
+  background-size: cover;
+}
+.contact-page-left-img-container {
+  padding: 4rem;
+  background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+  margin: 5rem;
+  height: 80%;
+}
+.contact-page-left-img-container img {
+  width: 50%;
+}
+.contact-page-left-img-container i {
+  font-size: 25px;
+  color: #ffffff;
+}
+.contact-page-left-img-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Sarabun;
+}
+.contact-page-left-img-container .text-center {
+  margin-bottom: 5rem;
+}
+.contact-page-left-img-container .text-left {
+  margin: 1rem;
+}
+.contact-page-left-img-container .text-left i {
+  padding: 12px;
+}
+.contact-page-left-img-content {
+  background: -moz-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2a0041", endColorstr="#ab7a1153",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.contact-page-right-content .container {
+  padding: 10rem 5rem;
+}
+.contact-page-right-content .container h2 {
+  color: #2a0041;
+  font-size: 80px;
+}
+.contact-page-right-content .container p {
+  color: #848484;
+  padding: 20px;
+}
+.contact-page-right-content .container form input, .contact-page-right-content .container form textarea {
+  height: 55px;
+  border-radius: 41px;
+  background-color: rgba(233, 233, 233, 0.66);
+  color: #a623cc;
+  padding-left: 25px;
+}
+.contact-page-right-content .container form textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+.contact-page-right-content .container form a {
+  border-radius: unset;
+}
+.contact-page-right-content .container form .form-check-input {
+  height: 20px;
+  width: 20px;
+}
+.contact-page-right-content .container form .form-check-label {
+  padding-left: 10px;
+}
+.contact-page-right-content .container form .card {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
