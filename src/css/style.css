@@ -12,7 +12,7 @@
 
 .btn-pink {
   width: 200px;
-  height: 52px;
+  height: 53px;
   border-radius: 31px;
   background-image: linear-gradient(255deg, #7b23c8, #880f6c);
   color: #ffffff;
@@ -38,10 +38,10 @@
 
 .btn-green {
   width: 200px;
-  height: 52px;
+  height: 53px;
   border-radius: 31px;
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.53);
-  background-image: linear-gradient(255deg, #1ea27c, #209e3d);
+  background-image: linear-gradient(255deg, #1ea27c, #286b33);
   color: #ffffff;
   cursor: pointer;
   border: none;
@@ -50,7 +50,7 @@
 }
 .btn-green:before {
   content: "";
-  background-image: linear-gradient(255deg, #1ea27c, #209e3d);
+  background-image: linear-gradient(255deg, #1ea27c, #286b33);
   min-width: 0;
   position: absolute;
   left: 0;
@@ -406,6 +406,10 @@ header .header-menu-nav-container-social i:hover {
   background-image: url(/src/img/gallery1.png);
 }
 
+.gallery .row {
+  margin-right: -60px;
+  margin-left: -45px;
+}
 .gallery .center .slick-dots {
   bottom: -70px;
 }
@@ -420,8 +424,10 @@ figure {
   position: relative;
   margin: 0;
 }
-
-figcaption {
+figure img {
+  width: 800px;
+}
+figure figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -439,13 +445,13 @@ figcaption {
   /* IE6-9 fallback on horizontal gradient */
   transition: all 0.3s;
 }
-figcaption:hover {
+figure figcaption:hover {
   opacity: 1;
 }
-figcaption:hover .fa-search-plus {
+figure figcaption:hover .fa-search-plus {
   transform: translateY(0px);
 }
-figcaption .fa-search-plus {
+figure figcaption .fa-search-plus {
   font-size: 2rem;
   color: #ffffff;
   transform: translateY(-30px);

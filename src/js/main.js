@@ -1,13 +1,15 @@
 /*sliders*/ 
 $(document).ready(function() {
 
-  $('.your-class').slick({
+  $('.about-us-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
     infinite: false,
-    speed: 300
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 3000
   });
 
   $('.center').slick({

@@ -259,6 +259,10 @@ header {
 }
 
 .gallery{
+    .row {
+        margin-right: -60px;
+        margin-left: -45px;
+    }
     .center {
         .slick-dots {
             bottom: -70px;
@@ -274,34 +278,38 @@ header {
 figure{
     position: relative;
     margin: 0;
-}
-
-figcaption{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: $white;
-    opacity: 0;
-    background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    transition: all .3s;
-    &:hover {
-        opacity: 1;
+    img {
+        width: 800px;
+    }
+    figcaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        opacity: 0;
+        background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        transition: all .3s;
+        &:hover {
+            opacity: 1;
+            .fa-search-plus{
+                transform: translateY(0px);
+            }
+        }
         .fa-search-plus{
-            transform: translateY(0px);
+            font-size: 2rem;
+            color: $white;
+            transform: translateY(-30px);
+            transition: all .3s;
         }
     }
-    .fa-search-plus{
-        font-size: 2rem;
-        color: $white;
-        transform: translateY(-30px);
-        transition: all .3s;
-    }
 }
+
+
 
 .testimonies {
     background: $dark-purple;
