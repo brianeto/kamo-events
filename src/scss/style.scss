@@ -11,18 +11,10 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    padding: 15rem;
-}
 #myVideo {
     left: 0; 
     top: 0;
     width: 100%; 
-    //height: auto;
     z-index: -100;
 }
 header {
@@ -184,6 +176,8 @@ header {
     display: flex;
     flex-direction: row;
     text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     .container {
         padding: 2rem;
     }
@@ -259,10 +253,8 @@ header {
 }
 
 .gallery{
-    .row {
-        margin-right: -60px;
-        margin-left: -45px;
-    }
+    padding-top: 5rem;
+    padding-bottom: 7rem;
     .center {
         .slick-dots {
             bottom: -70px;
@@ -271,90 +263,94 @@ header {
     h2 {
         color: $dark-purple;
     }
-    &-container{
-        padding: 5rem;
-    }
-}
-figure{
-    position: relative;
-    margin: 0;
-    img {
-        width: 800px;
-    }
-    figcaption{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: $white;
-        opacity: 0;
-        background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        transition: all .3s;
-        &:hover {
-            opacity: 1;
+
+    figure{
+        position: relative;
+        margin: 0;
+        img {
+            width: 800px;
+        }
+        figcaption{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: $white;
+            opacity: 0;
+            background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            transition: all .3s;
+            &:hover {
+                opacity: 1;
+                .fa-search-plus{
+                    transform: translateY(0px);
+                }
+            }
             .fa-search-plus{
-                transform: translateY(0px);
+                font-size: 2rem;
+                color: $white;
+                transform: translateY(-30px);
+                transition: all .3s;
             }
         }
-        .fa-search-plus{
-            font-size: 2rem;
-            color: $white;
-            transform: translateY(-30px);
-            transition: all .3s;
-        }
     }
 }
+
 
 
 
 .testimonies {
     background: $dark-purple;
-    .container {
-        padding: 10rem 15rem;
-        .slick-dots {
-            bottom: -50px;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    button.slick-next, button.slick-next:hover {
+        right: 280px;
+    }
+    button.slick-prev, button.slick-prev:hover {
+        left: 280px;
+    }
+    .slick-dots {
+        bottom: -50px;
+    }
+    .card {
+        background: none;
+        padding: 10px;
+        margin: 0 15px;
+        border: none;
+        padding: 6rem;
+        &-img {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
         }
-        .card {
-            background: none;
-            padding: 10px;
-            margin: 0 15px;
-            border: none;
-            padding: 6rem;
-            &-img {
-                display: inline-block;
-                width: 200px;
-                height: 200px;
+        &-block {
+            h4 {
+                font-family: JosefinSans;
+                color: $white;
+                padding-top: 1.5rem;
             }
-            &-block {
-                h4 {
-                    font-family: JosefinSans;
-                    color: $white;
-                    padding-top: 1.5rem;
-                }
-                span {
-                    color: $main-pink;
-                }
-                p {
-                    padding-top: 1rem;
-                    color: $transparent-gray;
-                }
+            span {
+                color: $main-pink;
+            }
+            p {
+                padding-top: 1rem;
+                color: $transparent-gray;
             }
         }
+    }
 
-      }
-      .slick-active.slick-current {
-        .card {
-          
-        }
-        .card_img {
-          position: relative
-        }
-      }
-}
+    }
+    .slick-active.slick-current {
+    .card {
+        
+    }
+    .card_img {
+        position: relative
+    }
+    }
 
 .contact {
     padding: 0;
@@ -402,10 +398,10 @@ figure{
     }
     &-right-content {
         .container{
-            padding: 10rem 5rem;
+            padding: 6rem 4rem;
             h2 {
                 color: $dark-purple;
-                font-size: 80px;
+                font-size: 65px;
             }
             p {
                 color: $gray;
@@ -487,7 +483,6 @@ button.slick-next, button.slick-next:hover {
     z-index: 23;
   }
 
-
 /*SONIDO PAGE*/
 .video {
     position: relative;
@@ -501,7 +496,6 @@ button.slick-next, button.slick-next:hover {
         z-index: 32;
     }
 }
-
 .sound-features {
     height: 1270px;
     .container {
@@ -532,11 +526,11 @@ button.slick-next, button.slick-next:hover {
         }
     }
 }
-
 .advisory {
     background: $dark-purple;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
     .container{
-        padding: 10rem 15rem;
         color: $white;
         .advisory-title {
             h3 {
@@ -548,14 +542,16 @@ button.slick-next, button.slick-next:hover {
         }
     }
 }
-
 .our-sound-services {
     background-image: $white;
     display: flex;
     flex-direction: row;
     text-align: center;
-    .container {
-        padding: 2rem;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    h2 {
+        font-size: 40px;
+        color: $dark-purple;
     }
     &-subtitle {
         padding: 1rem;
@@ -565,7 +561,7 @@ button.slick-next, button.slick-next:hover {
         }
     }
     &-options {
-        justify-content: space-between;
+        justify-content: space-around;
         i {
             font-size: 35px;
             color: $dark-pink;
@@ -604,6 +600,7 @@ button.slick-next, button.slick-next:hover {
         }
     }
 }
+
 /*ILUMINACION PAGE*/
 .video {
     position: relative;
@@ -617,7 +614,6 @@ button.slick-next, button.slick-next:hover {
         z-index: 32;
     }
 }
-
 .ilumination-features {
     height: 1270px;
     .container {
@@ -648,30 +644,16 @@ button.slick-next, button.slick-next:hover {
         }
     }
 }
-
-.advisory {
-    background: $dark-purple;
-    .container{
-        padding: 10rem 15rem;
-        color: $white;
-        .advisory-title {
-            h3 {
-                font-size: 40px;
-            }
-        }
-        .advisory-subtitle {
-            padding:5px 0 20px 0; 
-        }
-    }
-}
-
 .our-ilumination-services {
     background-image: $white;
     display: flex;
     flex-direction: row;
     text-align: center;
-    .container {
-        padding: 2rem;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    h2 {
+        font-size: 40px;
+        color: $dark-purple;
     }
     &-subtitle {
         padding: 1rem;
@@ -720,6 +702,7 @@ button.slick-next, button.slick-next:hover {
     }
 }
 
+/*CONTACT PAGE*/
 .contact-page {
     padding: 0;
     display: flex;
@@ -766,14 +749,17 @@ button.slick-next, button.slick-next:hover {
     }
     &-right-content {
         .container{
-            padding: 10rem 5rem;
+            padding: 6rem 4rem;
             h2 {
                 color: $dark-purple;
-                font-size: 80px;
+                font-size: 65px;
             }
             p {
                 color: $gray;
                 padding: 20px;
+            }
+            .colapse-div {
+                background: $dark-purple;
             }
             form {
                 input, textarea {
@@ -799,6 +785,11 @@ button.slick-next, button.slick-next:hover {
                 }
                 .card {
                     border: none;
+                }
+                .collapse {
+                    a {
+                        color: $dark-purple;
+                    }
                 }
                 
             }

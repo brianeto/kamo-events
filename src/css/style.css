@@ -158,14 +158,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  padding: 15rem;
-}
-
 #myVideo {
   left: 0;
   top: 0;
@@ -334,6 +326,8 @@ header .header-menu-nav-container-social i:hover {
   display: flex;
   flex-direction: row;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .our-services .container {
   padding: 2rem;
@@ -406,9 +400,9 @@ header .header-menu-nav-container-social i:hover {
   background-image: url(/src/img/gallery1.png);
 }
 
-.gallery .row {
-  margin-right: -60px;
-  margin-left: -45px;
+.gallery {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 .gallery .center .slick-dots {
   bottom: -70px;
@@ -416,18 +410,14 @@ header .header-menu-nav-container-social i:hover {
 .gallery h2 {
   color: #2a0041;
 }
-.gallery-container {
-  padding: 5rem;
-}
-
-figure {
+.gallery figure {
   position: relative;
   margin: 0;
 }
-figure img {
+.gallery figure img {
   width: 800px;
 }
-figure figcaption {
+.gallery figure figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -445,13 +435,13 @@ figure figcaption {
   /* IE6-9 fallback on horizontal gradient */
   transition: all 0.3s;
 }
-figure figcaption:hover {
+.gallery figure figcaption:hover {
   opacity: 1;
 }
-figure figcaption:hover .fa-search-plus {
+.gallery figure figcaption:hover .fa-search-plus {
   transform: translateY(0px);
 }
-figure figcaption .fa-search-plus {
+.gallery figure figcaption .fa-search-plus {
   font-size: 2rem;
   color: #ffffff;
   transform: translateY(-30px);
@@ -460,38 +450,44 @@ figure figcaption .fa-search-plus {
 
 .testimonies {
   background: #2a0041;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
-.testimonies .container {
-  padding: 10rem 15rem;
+.testimonies button.slick-next, .testimonies button.slick-next:hover {
+  right: 280px;
 }
-.testimonies .container .slick-dots {
+.testimonies button.slick-prev, .testimonies button.slick-prev:hover {
+  left: 280px;
+}
+.testimonies .slick-dots {
   bottom: -50px;
 }
-.testimonies .container .card {
+.testimonies .card {
   background: none;
   padding: 10px;
   margin: 0 15px;
   border: none;
   padding: 6rem;
 }
-.testimonies .container .card-img {
+.testimonies .card-img {
   display: inline-block;
   width: 200px;
   height: 200px;
 }
-.testimonies .container .card-block h4 {
+.testimonies .card-block h4 {
   font-family: JosefinSans;
   color: #ffffff;
   padding-top: 1.5rem;
 }
-.testimonies .container .card-block span {
+.testimonies .card-block span {
   color: #a623cc;
 }
-.testimonies .container .card-block p {
+.testimonies .card-block p {
   padding-top: 1rem;
   color: rgba(255, 255, 255, 0.6);
 }
-.testimonies .slick-active.slick-current .card_img {
+
+.slick-active.slick-current .card_img {
   position: relative;
 }
 
@@ -543,11 +539,11 @@ figure figcaption .fa-search-plus {
   /* IE6-9 fallback on horizontal gradient */
 }
 .contact-right-content .container {
-  padding: 10rem 5rem;
+  padding: 6rem 4rem;
 }
 .contact-right-content .container h2 {
   color: #2a0041;
-  font-size: 80px;
+  font-size: 65px;
 }
 .contact-right-content .container p {
   color: #848484;
@@ -675,9 +671,10 @@ button.slick-prev, button.slick-prev:hover {
 
 .advisory {
   background: #2a0041;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 .advisory .container {
-  padding: 10rem 15rem;
   color: #ffffff;
 }
 .advisory .container .advisory-title h3 {
@@ -692,9 +689,12 @@ button.slick-prev, button.slick-prev:hover {
   display: flex;
   flex-direction: row;
   text-align: center;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
-.our-sound-services .container {
-  padding: 2rem;
+.our-sound-services h2 {
+  font-size: 40px;
+  color: #2a0041;
 }
 .our-sound-services-subtitle {
   padding: 1rem;
@@ -704,7 +704,7 @@ button.slick-prev, button.slick-prev:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 .our-sound-services-options {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .our-sound-services-options i {
   font-size: 35px;
@@ -787,28 +787,17 @@ button.slick-prev, button.slick-prev:hover {
   color: #2a0041;
 }
 
-.advisory {
-  background: #2a0041;
-}
-.advisory .container {
-  padding: 10rem 15rem;
-  color: #ffffff;
-}
-.advisory .container .advisory-title h3 {
-  font-size: 40px;
-}
-.advisory .container .advisory-subtitle {
-  padding: 5px 0 20px 0;
-}
-
 .our-ilumination-services {
   background-image: #ffffff;
   display: flex;
   flex-direction: row;
   text-align: center;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
-.our-ilumination-services .container {
-  padding: 2rem;
+.our-ilumination-services h2 {
+  font-size: 40px;
+  color: #2a0041;
 }
 .our-ilumination-services-subtitle {
   padding: 1rem;
@@ -856,6 +845,7 @@ button.slick-prev, button.slick-prev:hover {
   padding: 1rem;
 }
 
+/*CONTACT PAGE*/
 .contact-page {
   padding: 0;
   display: flex;
@@ -904,15 +894,18 @@ button.slick-prev, button.slick-prev:hover {
   /* IE6-9 fallback on horizontal gradient */
 }
 .contact-page-right-content .container {
-  padding: 10rem 5rem;
+  padding: 6rem 4rem;
 }
 .contact-page-right-content .container h2 {
   color: #2a0041;
-  font-size: 80px;
+  font-size: 65px;
 }
 .contact-page-right-content .container p {
   color: #848484;
   padding: 20px;
+}
+.contact-page-right-content .container .colapse-div {
+  background: #2a0041;
 }
 .contact-page-right-content .container form input, .contact-page-right-content .container form textarea {
   height: 55px;
@@ -937,6 +930,9 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container form .card {
   border: none;
+}
+.contact-page-right-content .container form .collapse a {
+  color: #2a0041;
 }
 
 /*# sourceMappingURL=style.css.map */
