@@ -69,23 +69,20 @@ $(document).ready(function() {
       }
   });
 
-  /*SOUND PAGE*/
-  $('.slider-sound').slick({
+  /*SOUND, ILUMINATION & PHOGRAPHY PAGES*/
+  $('.slider-images').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
-    variableWidth: true
+    variableWidth: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2200
   });
 
-  /*ILUMINATION PAGE*/
-  $('.slider-ilumination').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    centerMode: true,
-    focusOnSelect: true,
-    variableWidth: true
-  });
 
   $("#demo").on("hide.bs.collapse", function(){
     $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
