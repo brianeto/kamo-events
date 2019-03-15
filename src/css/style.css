@@ -674,6 +674,9 @@ button.slick-prev, button.slick-prev:hover {
 .sound-features-montaje-left h2 {
   color: #2a0041;
 }
+.sound-features-montaje-left p {
+  color: #848484;
+}
 .sound-features-dj {
   display: flex;
   margin-top: 5rem;
@@ -686,6 +689,9 @@ button.slick-prev, button.slick-prev:hover {
 }
 .sound-features-dj h2 {
   color: #2a0041;
+}
+.sound-features-dj p {
+  color: #848484;
 }
 
 .advisory {
@@ -912,6 +918,9 @@ button.slick-prev, button.slick-prev:hover {
 .contact-page-right-content .container form a {
   border-radius: unset;
 }
+.contact-page-right-content .container form p {
+  padding: 3px 15px;
+}
 .contact-page-right-content .container form .form-check-input {
   height: 20px;
   width: 20px;
@@ -924,6 +933,14 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container form .collapse a {
   color: #2a0041;
+}
+.contact-page-right-content .container form .collapse:after {
+  position: absolute;
+  font-family: "Sans-serif";
+  content: "^";
+  transform: rotateZ(0deg);
+  right: 15px;
+  transition: all 0.5s linear;
 }
 
 /*# sourceMappingURL=style.css.map */

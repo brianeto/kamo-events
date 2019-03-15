@@ -25,14 +25,14 @@
             <nav class="header-menu-nav">
                 <div class="header-menu-nav-container">
                     <div class="header-menu-nav-container-hover"></div>
-                    <li>INICIO</li>
-                    <li>SOBRE NOSOTROS</li>
-                    <li>SERVICIOS</li>
-                    <li>ALQUILER DE EQUIPOS</li>
-                    <li>GALERÍA</li>
-                    <li>TESTIMONIOS</li>
-                    <li>BLOG</li>
-                    <li>CONTÁCTANOS</li>
+                    <li onclick="location.href='index.html'">INICIO</li>
+                    <li onclick="location.href='index.html#sobre-nosotros'">SOBRE NOSOTROS</li>
+                    <li onclick="location.href='index.html#servicios'">SERVICIOS</li>
+                    <li onclick="location.href='index.html#alquiler-de-equipos'">ALQUILER DE EQUIPOS</li>
+                    <li onclick="location.href='index.html#galeria'">GALERÍA</li>
+                    <li onclick="location.href='index.html#testimonios'">TESTIMONIOS</li>
+                    <li onclick="location.href='index.html#blog'">BLOG</li>
+                    <li onclick="location.href='index.html#contactanos'">CONTÁCTANOS</li>
                     <div class="header-menu-nav-container-social">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>
@@ -40,10 +40,9 @@
                         <i class="far fa-envelope-open"></i>
                     </div>
                 </div>
-            </div>
         </div>
     </header>
-    <section class="hero hero-pages d-flex position-relative align-items-center">
+    <section class="hero h-100 d-flex position-relative align-items-center">
             <div class="hero-div-diagonal"></div>
             <div class="container-fluid">
                 <div class="hero-title">
@@ -143,13 +142,15 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6 text-left">
                                                         <label><a>Horario del evento</a></label>
+                                                        <p>Inicia</p>
                                                         <input type="time" class="form-control" placeholder="Inicia">
                                                     </div>
                                                     <div class="form-group col-md-6 text-left">
-                                                        <label><a></a></label>
+                                                        <label class="pt-3"></label>
+                                                        <p>Finaliza</p>
                                                         <input type="time" class="form-control" placeholder="Finaliza">
                                                     </div>
-                                                    <div class="form-group text-left">
+                                                    <div class="form-group text-center w-100">
                                                             <label><a>Añade servicios a tu cotización</a></label>
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -165,7 +166,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <button type="submit" class="btn-pink">COTIZAR</button>
+                                    <button type="submit" class="btn-pink">
+                                        <span class="btn-text">COTIZAR</span>
+                                    </button>
                                     <div>
                                         <p>Al Enviar el mensaje aceptas los Terminos y Condiciones</p>
                                     </div>

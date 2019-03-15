@@ -246,6 +246,7 @@ header {
 .hero-pages {
     height: 565px !important;
 }
+
 /*SLIDER STYLE*/
 .slick-arrow {
     width: 74px;
@@ -522,6 +523,9 @@ button.slick-next, button.slick-next:hover {
             h2 {
                 color: $dark-purple;
             }
+            p {
+                color: $gray;
+            }
         }
     }
     &-dj {
@@ -535,6 +539,9 @@ button.slick-next, button.slick-next:hover {
         }
         h2 {
             color: $dark-purple;
+        }
+        p {
+            color: $gray;
         }
     }
 }
@@ -760,6 +767,9 @@ button.slick-next, button.slick-next:hover {
                 }
                 a {
                     border-radius: unset;
+                }
+                p {
+                    padding: 3px 15px;
                 }
                 .form-check-input {
                     height: 20px;
