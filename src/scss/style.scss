@@ -116,7 +116,7 @@ header {
         position: absolute;
     }
     &-subtitle {
-        padding: 3rem 0;
+        margin-bottom: 5rem;
         h5 {
             font-size: 16px;
         }
@@ -243,6 +243,9 @@ header {
         }
     }
 }
+.hero-pages {
+    height: 565px !important;
+}
 /*SLIDER STYLE*/
 .slick-arrow {
     width: 74px;
@@ -344,12 +347,12 @@ header {
 
     }
     .slick-active.slick-current {
-    .card {
-        
-    }
-    .card_img {
-        position: relative
-    }
+        .card {
+            
+        }
+        .card_img {
+            position: relative
+        }
     }
 
 .contact {
@@ -431,7 +434,11 @@ header {
 
     }
 }
-
+/*global form style*/
+.form-control {
+    border: none;
+    font-size: 14px;
+}
 footer {
     background: $black;
     .footer-xd {
@@ -497,7 +504,10 @@ button.slick-next, button.slick-next:hover {
     }
 }
 .sound-features {
-    height: 1270px;
+    height: 1000px;
+    img {
+        width:550px;
+    }
     .container {
         padding: 0;
     }
@@ -508,6 +518,7 @@ button.slick-next, button.slick-next:hover {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-right: 5em;
             h2 {
                 color: $dark-purple;
             }
@@ -520,6 +531,7 @@ button.slick-next, button.slick-next:hover {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-left: 5em;
         }
         h2 {
             color: $dark-purple;
@@ -612,36 +624,6 @@ button.slick-next, button.slick-next:hover {
         margin-left: -560px;
         margin-top: -200px;
         z-index: 32;
-    }
-}
-.ilumination-features {
-    height: 1270px;
-    .container {
-        padding: 0;
-    }
-    &-montaje {
-        display: flex;
-        margin-top: 30rem;
-        &-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h2 {
-                color: $dark-purple;
-            }
-        }
-    }
-    &-dj {
-        display: flex;
-        margin-top: 5rem;
-        &-right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        h2 {
-            color: $dark-purple;
-        }
     }
 }
 .our-ilumination-services {
@@ -762,12 +744,15 @@ button.slick-next, button.slick-next:hover {
                 background: $dark-purple;
             }
             form {
-                input, textarea {
+                input, textarea, select {
                     height: 55px;
                     border-radius: 41px;
                     background-color: rgba(233, 233, 233, 0.66);
                     color: $main-pink;
                     padding-left: 25px
+                }
+                select {
+                    height: 55px !important;
                 }
                 textarea {
                     height: 150px;

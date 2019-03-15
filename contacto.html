@@ -17,7 +17,7 @@
     <header>
         <div class="header-logo">
             <a href="index.html">
-                <img src="src/img/Logo Kamo blanco.png" alt="logo-kamo">
+                <img src="src/img/Logo-Kamo-blanco.png" alt="logo-kamo">
             </a>
         </div>
         <div class="header-menu">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </header>
-    <section class="hero d-flex position-relative align-items-center">
+    <section class="hero hero-pages d-flex position-relative align-items-center">
             <div class="hero-div-diagonal"></div>
             <div class="container-fluid">
                 <div class="hero-title">
@@ -65,7 +65,7 @@
                 <div class="contact-page-left-img-container">
                     <div>
                         <div class="text-center">
-                            <img src="src/img/Logo Kamo blanco.png" alt="">
+                            <img src="src/img/Logo-Kamo-blanco.png" alt="as">
                         </div> 
                         <div class="text-left">
                             <i class="far fa-envelope-open"></i><a href="">hola@kamoeventos.com</a>
@@ -90,8 +90,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci.</p>
                             <form class="text-center">
                                     <p>
-                                        <a class="btn btn-primary w-100 text-left colapse-div   " data-target="#demo" data-toggle="collapse" data-parent="#accordion" href="#collapseone" aria-expanded="true" aria-controls="collapseExample">
-                                            <span class="glyphicon glyphicon-collapse-down">TUS DATOS</span>
+                                        <a class="btn btn-primary w-100 text-left colapse-div" data-toggle="collapse" href="#collapseone" aria-expanded="true" aria-controls="collapseExample">
+                                            TUS DATOS
                                         </a>
                                     </p>
                                     <div class="collapse show" id="collapseone" role="tabpanel">
@@ -118,10 +118,16 @@
                                             <div class="card card-block col-12">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6 text-left">
-                                                        <label><a>Cantidad de asistentes</a></label>
-                                                        <input type="text" class="form-control" placeholder="Entre 1 y 100">
+                                                        <label for="exampleFormControlSelect1"><a>Cantidad de asistentes</a></label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                          <option>1 a 100</option>
+                                                          <option>101 a 200</option>
+                                                          <option>201 a 300</option>
+                                                          <option>301 a 400</option>
+                                                          <option>Más de 400</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="form-group col-md-6 text-left">
+                                                    <div     class="form-group col-md-6 text-left">
                                                         <label><a>Tipo de recinto</a></label>
                                                         <input type="text" class="form-control" placeholder="15 años, matrimonio, fiesta empresarial, cumpleaños, etc...">
                                                     </div>
@@ -132,16 +138,16 @@
                                                 </div>
                                                 <div class="form-group text-left">
                                                     <label><a>Fecha del evento</a></label>
-                                                    <input type="text" class="form-control" placeholder="15 Marzo de 2019">
+                                                    <input type="date" class="form-control" placeholder="15 Marzo de 2019">
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6 text-left">
                                                         <label><a>Horario del evento</a></label>
-                                                        <input type="text" class="form-control" placeholder="Inicia">
+                                                        <input type="time" class="form-control" placeholder="Inicia">
                                                     </div>
                                                     <div class="form-group col-md-6 text-left">
                                                         <label><a></a></label>
-                                                        <input type="text" class="form-control" placeholder="">
+                                                        <input type="time" class="form-control" placeholder="Finaliza">
                                                     </div>
                                                     <div class="form-group text-left">
                                                             <label><a>Añade servicios a tu cotización</a></label>
@@ -160,6 +166,9 @@
                                             </div>
                                         </div>
                                     <button type="submit" class="btn-pink">COTIZAR</button>
+                                    <div>
+                                        <p>Al Enviar el mensaje aceptas los Terminos y Condiciones</p>
+                                    </div>
                             </form> 
                         </div>
                     </div>
