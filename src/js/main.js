@@ -13,8 +13,11 @@ $(document).ready(function() {
   });
 
   $('.center').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
     slidesToShow: 3,
-    dots:true
+    slidesToScroll: 3
   });
 
   $('.pop').slick({
@@ -23,6 +26,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     arrows: true,
     dots: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 768,
