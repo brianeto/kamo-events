@@ -149,7 +149,7 @@ a:hover {
 }
 
 .gallery .slick-dots li.slick-active button {
-  border-color: #880f6c;
+  border-color: #ffffff;
 }
 
 html {
@@ -251,7 +251,7 @@ header .header-menu-nav-container-social i:hover {
   display: flex;
   flex-direction: row;
   text-align: center;
-  height: 800px;
+  height: 700px;
   position: relative;
   z-index: 3;
   overflow: hidden;
@@ -933,14 +933,6 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container form .collapse a {
   color: #2a0041;
-}
-.contact-page-right-content .container form .collapse:after {
-  position: absolute;
-  font-family: "Sans-serif";
-  content: "^";
-  transform: rotateZ(0deg);
-  right: 15px;
-  transition: all 0.5s linear;
 }
 
 /*# sourceMappingURL=style.css.map */
