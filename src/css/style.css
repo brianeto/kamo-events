@@ -499,6 +499,7 @@ header .header-menu-nav-container-social i:hover {
   position: relative;
 }
 
+/*CONTACT SECTION*/
 .contact {
   padding: 0;
   display: flex;
@@ -900,6 +901,13 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container .colapse-div {
   background: #2a0041;
+  position: relative;
+}
+.contact-page-right-content .container .colapse-div i {
+  position: absolute;
+  right: 1em;
+  top: 0.9em;
+  font-size: 20px;
 }
 .contact-page-right-content .container form input, .contact-page-right-content .container form textarea, .contact-page-right-content .container form select {
   height: 55px;
@@ -933,6 +941,11 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container form .collapse a {
   color: #2a0041;
+  position: relative;
+}
+.contact-page-right-content .container form .collapse a i {
+  position: absolute;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

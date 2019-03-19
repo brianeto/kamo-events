@@ -87,12 +87,19 @@ $(document).ready(function() {
     autoplaySpeed: 2200
   });
 
-
-  $("#demo").on("hide.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+  /**/
+  $("#collapseone").on("hide.bs.collapse", function() {
+    $("#colapseonetrigger").html('TUS DATOS <i class="fa fa-plus"></i>');
   });
-  $("#demo").on("show.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+  $("#collapseone").on("show.bs.collapse", function() {
+    $("#colapseonetrigger").html('TUS DATOS <i class="fa fa-minus"></i>');
+  });
+
+  $("#collapsetwo").on("hide.bs.collapse", function(){
+    $("#colapsetwotrigger").html('SOBRE TU EVENTO <i class="fa fa-plus"></i>');
+  });
+  $("#collapsetwo").on("show.bs.collapse", function(){
+    $("#colapsetwotrigger").html('SOBRE TU EVENTO <i class="fa fa-minus"></i>');
   });
 
 });

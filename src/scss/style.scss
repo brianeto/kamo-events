@@ -355,7 +355,7 @@ header {
             position: relative
         }
     }
-
+/*CONTACT SECTION*/
 .contact {
     padding: 0;
     display: flex;
@@ -749,6 +749,13 @@ button.slick-next, button.slick-next:hover {
             }
             .colapse-div {
                 background: $dark-purple;
+                position: relative; 
+                i {
+                    position: absolute;
+                    right: 1em;
+                    top: .9em;
+                    font-size: 20px;
+                }
             }
             form {
                 input, textarea, select {
@@ -784,6 +791,11 @@ button.slick-next, button.slick-next:hover {
                 .collapse {
                     a {
                         color: $dark-purple;
+                        position: relative;
+                        i {
+                            position: absolute;
+                            left: 0;
+                        }
                     }
                 }
                 
