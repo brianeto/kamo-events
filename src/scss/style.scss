@@ -442,7 +442,7 @@ header {
 }
 footer {
     background: $black;
-    .footer-xd {
+    .footer-container {
         padding: 40px;
         margin-left: 12%;
         color: $white;
@@ -804,3 +804,33 @@ button.slick-next, button.slick-next:hover {
 
     }
 }
+
+.cd-top {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 50%;
+    i {
+        position: absolute;
+        top: 12px;
+        left: 1px;
+        font-size: 25px;
+        color: $white;
+    }
+  }
+  .cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+  }

@@ -117,8 +117,8 @@
                                             <div class="card card-block col-12">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6 text-left">
-                                                        <label for="exampleFormControlSelect1"><a>Cantidad de asistentes</a></label>
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <label for="selectAssistants"><a>Cantidad de asistentes</a></label>
+                                                        <select class="form-control" id="selectAssistants">
                                                           <option>1 a 100</option>
                                                           <option>101 a 200</option>
                                                           <option>201 a 300</option>
@@ -126,14 +126,18 @@
                                                           <option>Más de 400</option>
                                                         </select>
                                                     </div>
-                                                    <div     class="form-group col-md-6 text-left">
-                                                        <label><a>Tipo de recinto</a></label>
-                                                        <input type="text" class="form-control" placeholder="15 años, matrimonio, fiesta empresarial, cumpleaños, etc...">
+                                                    <div class="form-group col-md-6 text-left">
+                                                        <label for="selectType"><a>Tipo de recinto</a></label>
+                                                        <select class="form-control" id="selectType">
+                                                            <option>Abierto</option>
+                                                            <option>Cerrado</option>
+                                                            <option>Otro</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group text-left">
                                                     <label><a>Motivo</a></label>
-                                                    <input type="text" class="form-control" placeholder="Tu télefono o celular">
+                                                    <input type="text" class="form-control" placeholder="15 años, matrimonio, fiesta empresarial, cumpleaños, etc...">
                                                 </div>
                                                 <div class="form-group text-left">
                                                     <label><a>Fecha del evento</a></label>
@@ -179,7 +183,7 @@
             </div>
         </section>
     <footer>
-        <div class="footer-xd d-flex">
+        <div class="footer-container d-flex">
             <div class="">
                 <h6>Copyright Kamo Eventos 2019 All rights reserved / Designed & developed by PUB Agency</h6>
             </div>
@@ -187,6 +191,7 @@
                 <a href="">Polìtica de privacidad</a>
             </div>
         </div>
+        <div class=""></div>
     </footer>
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap.js"></script>
