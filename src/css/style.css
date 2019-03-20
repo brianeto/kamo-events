@@ -407,6 +407,19 @@ header .header-menu-nav-container-social i:hover {
   z-index: 3;
   background-image: url(/src/img/gallery1.png);
 }
+.slick-arrow:focus, .slick-arrow:hover {
+  background: rgba(0, 0, 0, 0.57);
+}
+
+/*INSTAGRAM LIGHTWIDGET SLIDER*/
+.sound-slider h3 {
+  color: #848484;
+}
+
+.lightwidget-widget {
+  margin-bottom: -6px;
+  height: 280px;
+}
 
 .gallery {
   padding-top: 5rem;
@@ -575,6 +588,15 @@ header .header-menu-nav-container-social i:hover {
 }
 .contact-right-content .container form .form-check-label {
   padding-left: 10px;
+}
+
+/*form input arrows styles*/
+.no-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inicia-spin::-webkit-inner-spin-button, .finaliza-spin::-webkit-inner-spin-button {
+  margin-top: 0.8em;
 }
 
 /*global form style*/

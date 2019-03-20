@@ -1,0 +1,35 @@
+/* define breackpoints */
+$phone-min: 320px;
+$phone-max: 678px;
+$tablet: 920px;/* not needed */
+$desktop: 1024px;
+
+/* define mixin */
+@mixin breakpoint($media) {
+  @if $media == mobile {
+    @media (max-width: $phone-max) { @content; }
+  }
+   @else if $media == tablet {
+    @media (min-width: $phone-max + 1) and (max-width: $desktop) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop + 1) { @content; }
+  }
+}
+
+/* usage */
+@include breakpoint(mobile) {
+  .hola {
+    background-color: cyan;
+  }
+}
+@include breakpoint(tablet) {
+  .hola {
+    background-color: red;
+  }
+}
+@include breakpoint(desktop) {
+  .hola {
+    background-color: yellow;
+  }
+}
