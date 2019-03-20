@@ -112,10 +112,88 @@ a:hover {
   text-decoration: none;
 }
 
+/* define breackpoints */
+/* not needed */
+/* define mixin */
+/* usage */
+@media (max-width: 678px) {
+  h2 {
+    font-size: 33px;
+  }
+
+  h5 {
+    font-size: 14px !important;
+  }
+
+  #myVideo {
+    width: auto;
+  }
+
+  .slick-dots {
+    bottom: -70px;
+  }
+
+  .about-us-left-img {
+    display: none;
+  }
+  .about-us-right-content {
+    padding: 7em 3em;
+  }
+  .features {
+    padding: 6rem 2rem 2rem 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .features-experiencia, .features-responsabilidad {
+    margin-bottom: 2em;
+  }
+  .our-services {
+    padding: 5em 0 5em 0;
+    background-size: cover;
+  }
+  .our-services-options {
+    flex-direction: column;
+  }
+  .our-services-options h3 {
+    font-size: 30px !important;
+  }
+  .our-services-options-sonido, .our-services-options-iluminacion, .our-services-options-fotografia {
+    margin: 2em 0 2em 0;
+  }
+}
+@media (min-width: 679px) and (max-width: 1024px) {
+  .hola {
+    background-color: red;
+  }
+}
+@media (min-width: 1025px) {
+  #myVideo {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: -150px;
+  }
+
+  .about-us-right-content {
+    padding: 10em 6em;
+  }
+  .features {
+    padding: 6rem 11rem;
+  }
+  .our-services {
+    padding: 5em;
+  }
+  .our-services-options {
+    flex-direction: row;
+  }
+  .our-services-options-sonido, .our-services-options-iluminacion, .our-services-options-fotografia {
+    margin: 0.2em;
+  }
+}
 .slick-dots {
   text-align: center;
   padding-top: 15px;
-  bottom: -150px;
 }
 .slick-dots li {
   display: inline-block;
@@ -165,7 +243,6 @@ body {
 #myVideo {
   left: 0;
   top: 0;
-  width: 100%;
   z-index: -100;
 }
 
@@ -290,15 +367,11 @@ header .header-menu-nav-container-social i:hover {
 .about-us-right-content {
   background-color: #2a0041;
 }
-.about-us-right-content .container {
-  padding: 15rem 5rem;
-}
 .about-us-right-content p {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .features {
-  padding: 6rem 11rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -330,11 +403,6 @@ header .header-menu-nav-container-social i:hover {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.our-services .container {
-  padding: 2rem;
 }
 .our-services-subtitle {
   padding: 1rem;
@@ -355,7 +423,6 @@ header .header-menu-nav-container-social i:hover {
 .our-services-options-sonido {
   height: 416px;
   background: rgba(0, 0, 0, 0.58);
-  margin: 0.2em;
 }
 .our-services-options-sonido-content {
   padding-top: 8em;
@@ -369,7 +436,6 @@ header .header-menu-nav-container-social i:hover {
 .our-services-options-iluminacion {
   height: 416px;
   background: rgba(0, 0, 0, 0.58);
-  margin: 0.2em;
 }
 .our-services-options-iluminacion-content {
   padding-top: 8em;
@@ -383,7 +449,6 @@ header .header-menu-nav-container-social i:hover {
 .our-services-options-fotografia {
   height: 416px;
   background: rgba(0, 0, 0, 0.58);
-  margin: 0.2em;
 }
 .our-services-options-fotografia-content {
   padding-top: 8em;

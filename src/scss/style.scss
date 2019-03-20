@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_typography.scss";
+@import "_mixins.scss";
 @import "_slick-slider.scss";
 
 html{
@@ -14,7 +15,6 @@ body {
 #myVideo {
     left: 0; 
     top: 0;
-    width: 100%; 
     z-index: -100;
 }
 header {
@@ -135,16 +135,12 @@ header {
     }
     &-right-content {
         background-color: $dark-purple;
-        .container{
-            padding: 15rem 5rem;
-        }
         p {
             color: $transparent-gray;
         }
     }
 }
 .features {
-    padding: 6rem 11rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,11 +172,6 @@ header {
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    .container {
-        padding: 2rem;
-    }
     &-subtitle {
         padding: 1rem;
         h5 {
@@ -189,6 +180,7 @@ header {
         }
     }
     &-options {
+        //flex-direction: row;
         i {
             font-size: 35px;
             color: $dark-pink;
@@ -202,7 +194,7 @@ header {
         &-sonido{
             height: 416px;
             background: rgba(0, 0, 0, 0.58);
-            margin: 0.2em;
+            //margin: 0.2em;
             &-content {
                 padding-top: 8em;
             }
@@ -210,13 +202,13 @@ header {
                 padding-top: 1.4rem;
             }
             &-button-pink{
-                padding: 1rem;;
+                padding: 1rem;
             }
         }
         &-iluminacion{
             height: 416px;
             background: rgba(0, 0, 0, 0.58);
-            margin: 0.2em;
+            //margin: 0.2em;
             &-content {
                 padding-top: 8em;
             }
@@ -224,13 +216,13 @@ header {
                 padding-top: 1.4rem;
             }
             &-button-pink{
-                padding: 1rem;;
+                padding: 1rem;
             }
         }
         &-fotografia{
             height: 416px;
             background: rgba(0, 0, 0, 0.58);
-            margin: 0.2em;
+            //margin: 0.2em;
             &-content {
                 padding-top: 8em;
             }

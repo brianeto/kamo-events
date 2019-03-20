@@ -19,8 +19,98 @@ $desktop: 1024px;
 
 /* usage */
 @include breakpoint(mobile) {
-  .hola {
-    background-color: cyan;
+  h2 {
+    font-size: 33px;
+  }
+  h5 {
+    font-size: 14px !important;
+  }
+  #myVideo {
+    width: auto;
+  }
+  .slick-dots {
+    bottom: -70px;
+  }
+  .about-us {
+    &-left-img {
+        display: none;
+        img {
+        }
+    }
+    &-right-content {
+        padding: 7em 3em;
+        p {
+        }
+    }
+  }
+.features {
+    padding: 6rem 2rem 2rem 2rem;;
+    margin: 0;
+    text-align: center;
+    h6 {
+    }
+    p {
+    }
+    img{
+    }
+    &-experiencia, &-responsabilidad  {
+      margin-bottom: 2em;
+    }
+    &-responsabilidad {
+    }
+    &-alegria {
+    }
+  }
+
+  .our-services {
+    padding: 5em 0 5em 0;
+    background-size: cover;
+    &-title {
+      h2 {
+
+      }
+    }
+    &-subtitle {
+        h5 {
+        }
+    }
+    &-options {
+      flex-direction: column;
+      i {
+
+      }
+      h3 {
+        font-size: 30px !important;
+      }
+
+      &-sonido, &-iluminacion, &-fotografia {
+        margin: 2em 0 2em 0;
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+      &-iluminacion {
+
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+      &-fotografia {
+
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+    }
   }
 }
 @include breakpoint(tablet) {
@@ -29,7 +119,85 @@ $desktop: 1024px;
   }
 }
 @include breakpoint(desktop) {
-  .hola {
-    background-color: yellow;
+  #myVideo {
+    width: 100%;
+  }
+  .slick-dots {
+    bottom: -150px;
+  }
+  .about-us {
+    &-left-img {
+        img {
+        }
+    }
+    &-right-content {
+        padding: 10em 6em;
+        p {
+        }
+    }
+  }
+  .features {
+    padding: 6rem 11rem;
+    h6 {
+    }
+    p {
+    }
+    img{
+    }
+    &-experiencia {
+    }
+    &-responsabilidad {
+    }
+    &-alegria {
+    }
+  }
+  .our-services {
+    padding: 5em;
+    &-title {
+      h2 {
+
+      }
+    }
+    &-subtitle {
+        h5 {
+        }
+    }
+    &-options {
+      flex-direction: row;
+      i {
+
+      }
+      h3 {
+
+      }
+
+      &-sonido, &-iluminacion, &-fotografia {
+        margin: 0.2em;
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+      &-iluminacion {
+
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+      &-fotografia {
+
+          &-content {
+          }
+          &-title {
+          }
+          &-button-pink{
+          }
+      }
+    }
   }
 }
