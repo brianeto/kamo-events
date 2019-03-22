@@ -236,7 +236,7 @@ header {
     }
 }
 .hero-pages {
-    height: 565px !important;
+    //height: 565px !important;
 }
 
 /*SLIDER STYLE*/
@@ -308,28 +308,20 @@ header {
     }
 }
 
-
-
-
 .testimonies {
     background: $dark-purple;
     padding-top: 5rem;
     padding-bottom: 8rem;
     button.slick-next, button.slick-next:hover {
-        right: 280px;
     }
     button.slick-prev, button.slick-prev:hover {
-        left: 280px;
     }
     .slick-dots {
         bottom: -50px;
     }
     .card {
         background: none;
-        padding: 10px;
-        margin: 0 15px;
         border: none;
-        padding: 6rem;
         &-img {
             display: inline-block;
             width: 200px;
@@ -369,25 +361,23 @@ header {
         padding: 0;
         background-size: cover;
         &-container{
-            padding: 4rem;
+            //padding: 4rem;
             background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
-            margin: 5rem;
-            height: 80%;
+            //margin: 5rem;
+            //height: 80%;
             img {
                 width: 50%;
             }
             i {
-                font-size: 25px;
+                //font-size: 25px;
                 color: $white;
             }
             a {
                 color: $white;
                 text-decoration: none;
-                font-size: 25px;
                 font-family: Sarabun;
             }
             .text-center {
-                margin-bottom: 5rem;
             }
             .text-left {
                 margin: 1rem;
@@ -407,10 +397,8 @@ header {
     }
     &-right-content {
         .container{
-            padding: 6rem 4rem;
             h2 {
                 color: $dark-purple;
-                font-size: 65px;
             }
             p {
                 color: $gray;
@@ -456,7 +444,6 @@ header {
 footer {
     background: $black;
     .footer-container {
-        padding: 40px;
         margin-left: 12%;
         color: $white;
     }
@@ -527,12 +514,12 @@ button.slick-next, button.slick-next:hover {
     }
     &-montaje {
         display: flex;
-        margin-top: 30rem;
+        //margin-top: -20rem;
         &-left {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-right: 5em;
+            //margin-right: 5em;
             h2 {
                 color: $dark-purple;
             }
@@ -548,7 +535,7 @@ button.slick-next, button.slick-next:hover {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-left: 5em;
+            //margin-left: 5em;
         }
         h2 {
             color: $dark-purple;
@@ -847,3 +834,18 @@ button.slick-next, button.slick-next:hover {
     visibility: visible;
     opacity: 1;
   }
+  /*VIDEO PAGES*/
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    z-index: 123213;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 18%;
+    width: 65%;
+    height: 65%;
+}
