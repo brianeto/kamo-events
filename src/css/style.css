@@ -326,6 +326,152 @@ a:hover {
     padding: 1rem;
   }
 
+  .contact {
+    padding: 0;
+    display: flex;
+  }
+  .contact-left-img {
+    background-image: url(../img/bg-left-contact.png);
+    padding: 0;
+    background-size: cover;
+  }
+  .contact-left-img-container {
+    background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+  }
+  .contact-left-img-container img {
+    width: 50%;
+  }
+  .contact-left-img-container i {
+    color: #ffffff;
+  }
+  .contact-left-img-container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Sarabun;
+  }
+  .contact-left-img-container .text-left {
+    margin: 1rem;
+  }
+  .contact-left-img-container .text-left i {
+    padding: 12px;
+  }
+  .contact-left-img-content {
+    background: -moz-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2a0041", endColorstr="#ab7a1153",GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+  .contact-right-content .container h2 {
+    color: #2a0041;
+  }
+  .contact-right-content .container p {
+    color: #848484;
+    padding: 20px;
+  }
+  .contact-right-content .container form input, .contact-right-content .container form textarea {
+    height: 55px;
+    border-radius: 41px;
+    background-color: rgba(233, 233, 233, 0.66);
+    color: #a623cc;
+    padding-left: 25px;
+  }
+  .contact-right-content .container form textarea {
+    height: 150px;
+    padding-top: 15px;
+  }
+  .contact-right-content .container form .form-check-input {
+    height: 20px;
+    width: 20px;
+  }
+  .contact-right-content .container form .form-check-label {
+    padding-left: 10px;
+  }
+
+  /*CONTACT PAGE*/
+  .contact-page {
+    flex-direction: column-reverse;
+  }
+  .contact-page-left-img {
+    background-image: url(../img/bg-left-contact.png);
+    padding: 0;
+    background-size: cover;
+  }
+  .contact-page-left-img-container {
+    padding: 0 !important;
+    background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+    margin: 0 !important;
+    height: 80%;
+  }
+  .contact-page-left-img-container img {
+    width: 50%;
+  }
+  .contact-page-left-img-container i {
+    font-size: 25px;
+    color: #ffffff;
+  }
+  .contact-page-left-img-container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px !important;
+    font-family: Sarabun;
+  }
+  .contact-page-left-img-container .text-center {
+    padding-top: 3em;
+  }
+  .contact-page-left-img-container .text-left {
+    margin: 1rem;
+  }
+  .contact-page-left-img-container .text-left i {
+    padding: 12px;
+  }
+  .contact-page-left-img-content {
+    background: -moz-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #2a0041 0%, rgba(122, 17, 83, 0.67) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2a0041", endColorstr="#ab7a1153",GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+  .contact-page-right-content {
+    margin-top: 5em;
+  }
+  .contact-page-right-content .container {
+    padding: 0 !important;
+  }
+  .contact-page-right-content .container h2 {
+    font-size: 35px !important;
+  }
+  .contact-page-right-content .container form a {
+    border-radius: unset;
+  }
+  .contact-page-right-content .container form p {
+    padding: 20px;
+  }
+  .contact-page-right-content .container form .form-check-input {
+    height: 20px;
+    width: 20px;
+  }
+  .contact-page-right-content .container form .form-check-label {
+    padding-left: 10px;
+  }
+  .contact-page-right-content .container form .card {
+    border: none;
+  }
+  .contact-page-right-content .container form .collapse a {
+    color: #2a0041;
+    position: relative;
+  }
+  .contact-page-right-content .container form .collapse a i {
+    position: absolute;
+    left: 0;
+  }
+
   footer {
     background: #000000;
   }
@@ -594,7 +740,6 @@ header .header-menu-nav {
   display: none;
 }
 header .header-menu-nav-container {
-  padding: 8rem 5rem;
   list-style: none;
   font-size: 30px;
   position: relative;

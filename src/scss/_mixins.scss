@@ -314,6 +314,177 @@ $desktop: 1024px;
       }
   }
 }
+.contact {
+    padding: 0;
+    display: flex;
+    &-left-img {
+        background-image: url(../img/bg-left-contact.png);
+        padding: 0;
+        background-size: cover;
+        &-container{
+            //padding: 4rem;
+            background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+            //margin: 5rem;
+            //height: 80%;
+            img {
+                width: 50%;
+            }
+            i {
+                //font-size: 25px;
+                color: $white;
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+                font-family: Sarabun;
+            }
+            .text-center {
+            }
+            .text-left {
+                margin: 1rem;
+                i {
+                    padding: 12px;
+                }
+            }
+        }
+
+        &-content {
+            background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            
+        }
+    }
+    &-right-content {
+        .container{
+            h2 {
+                color: $dark-purple;
+            }
+            p {
+                color: $gray;
+                padding: 20px;
+            }
+            form {
+                input, textarea {
+                    height: 55px;
+                    border-radius: 41px;
+                    background-color: rgba(233, 233, 233, 0.66);
+                    color: $main-pink;
+                    padding-left: 25px
+                }
+                textarea {
+                    height: 150px;
+                    padding-top: 15px
+                }
+                .form-check-input {
+                    height: 20px;
+                    width: 20px;
+                }
+                .form-check-label {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+    }
+}
+/*CONTACT PAGE*/
+.contact-page {
+  flex-direction: column-reverse;
+  &-left-img {
+      background-image: url(../img/bg-left-contact.png);
+      padding: 0;
+      background-size: cover;
+      &-container{
+          padding: 0 !important;
+          background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
+          margin: 0 !important;
+          height: 80%;
+          img {
+              width: 50%;
+          }
+          i {
+              font-size: 25px;
+              color: $white;
+          }
+          a {
+              color: $white;
+              text-decoration: none;
+              font-size: 19px !important;
+              font-family: Sarabun;
+          }
+          .text-center {
+              padding-top: 3em;
+          }
+          .text-left {
+              margin: 1rem;
+              i {
+                  padding: 12px;
+              }
+          }
+      }
+
+      &-content {
+          background: -moz-linear-gradient(45deg, rgba(42,0,65,1) 0%, rgba(122,17,83,0.67) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, rgba(42,0,65,1) 0%,rgba(122,17,83,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a0041', endColorstr='#ab7a1153',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          
+      }
+  }
+  &-right-content {
+    margin-top: 5em;
+      .container{
+          padding:0 !important;
+          h2 {
+              font-size: 35px !important;
+          }
+          p {
+          }
+          .colapse-div {
+              i {
+              }
+          }
+          form {
+              input, textarea, select {
+              }
+              select {
+              }
+              textarea {
+              }
+              a {
+                  border-radius: unset;
+              }
+              p {
+                  padding: 20px;
+              }
+              .form-check-input {
+                  height: 20px;
+                  width: 20px;
+              }
+              .form-check-label {
+                  padding-left: 10px;
+              }
+              .card {
+                  border: none;
+              }
+              .collapse {
+                  a {
+                      color: $dark-purple;
+                      position: relative;
+                      i {
+                          position: absolute;
+                          left: 0;
+                      }
+                  }
+              }
+              
+          }
+      }
+
+  }
+}
   footer {
     background: $black;
     .footer-container {
