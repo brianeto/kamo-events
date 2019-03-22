@@ -129,6 +129,16 @@ a:hover {
     width: auto;
   }
 
+  header .header-menu-nav {
+    padding-left: 5em;
+    padding-top: 3em;
+  }
+  header .header-menu-nav-container li {
+    font-size: 22px !important;
+  }
+  header .header-menu-nav-container-social {
+    bottom: -4rem !important;
+  }
   .slick-dots {
     bottom: -70px;
   }

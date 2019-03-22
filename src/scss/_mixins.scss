@@ -28,6 +28,45 @@ $desktop: 1024px;
   #myVideo {
     width: auto;
   }
+  header {
+
+    .header-logo {
+
+        img {
+
+        }
+    }
+    .header-menu {
+
+        &-nav {
+            padding-left: 5em;
+            padding-top: 3em;
+            &-container {
+
+
+                li {
+                  font-size: 22px !important;
+                    &:hover{
+
+                        &:before {
+
+                        }
+                    }
+
+                }
+                &-social {
+                  bottom: -4rem !important;
+                    i{
+
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
   .slick-dots {
     bottom: -70px;
   }
@@ -43,7 +82,7 @@ $desktop: 1024px;
         }
     }
   }
-.features {
+  .features {
     padding: 6rem 2rem 2rem 2rem;;
     margin: 0;
     text-align: center;
