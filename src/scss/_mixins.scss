@@ -43,7 +43,6 @@ $desktop: 1024px;
             padding-top: 3em;
             &-container {
 
-
                 li {
                   font-size: 22px !important;
                     &:hover{
@@ -543,6 +542,42 @@ $desktop: 1024px;
   .slick-dots {
     bottom: -150px;
   }
+  header {
+
+    .header-logo {
+
+        img {
+
+        }
+    }
+    .header-menu {
+
+        &-nav {
+            &-container {
+              padding: 8rem 4rem;
+                li {
+                  font-size: 22px !important;
+                    &:hover{
+
+                        &:before {
+
+                        }
+                    }
+
+                }
+                &-social {
+                  bottom: -4rem !important;
+                    i{
+
+                        &:hover {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
   .about-us {
     &-left-img {
         img {
@@ -725,6 +760,45 @@ $desktop: 1024px;
   /*PAGES*/
   .hero-pages {
     height: 565px !important;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(34, 1, 45, 0.78) !important;
+      
+    }
+  }
+  #bg-sonido {
+    background-image: url(../img/sonido.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #bg-iluminacion {
+    background-image: url(../img/iluminacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #bg-fotografia {
+    background-image: url(../img/fotografia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  #bg-contacto {
+    background-image: url(../img/contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
   }
   .embed-container {
     bottom: 10em;
