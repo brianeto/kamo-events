@@ -1,47 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kamo</title>
-    <link href="src/css/bootstrap.css" rel="stylesheet">
-    <link href="src/css/fontawesome-all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/slick.css"/>
-    <link rel="stylesheet" href="src/css/slick-theme.css"/>
-    <link rel="stylesheet" href="src/css/lightbox.css">   
-    <link href="src/css/style.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-            <a href="index.html">
-                <img src="src/img/Logo-Kamo-blanco.png" alt="logo-kamo">
-            </a>
-        </div>
-        <div class="header-menu">
-            <i class="fas fa-ellipsis-v"></i>
-            <nav class="header-menu-nav">
-                <div class="header-menu-nav-container">
-                    <div class="header-menu-nav-container-hover"></div>
-                    <li onclick="location.href='index.html'">INICIO</li>
-                    <li onclick="location.href='index.html#sobre-nosotros'">SOBRE NOSOTROS</li>
-                    <li onclick="location.href='index.html#servicios'">SERVICIOS</li>
-                    <li onclick="location.href='index.html#alquiler-de-equipos'">ALQUILER DE EQUIPOS</li>
-                    <li onclick="location.href='index.html#galeria'">GALERÍA</li>
-                    <li onclick="location.href='index.html#testimonios'">TESTIMONIOS</li>
-                    <li onclick="location.href='index.html#blog'">BLOG</li>
-                    <li onclick="location.href='index.html#contactanos'">CONTÁCTANOS</li>
-                    <div class="header-menu-nav-container-social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-whatsapp"></i>
-                        <i class="far fa-envelope-open"></i>
-                    </div>
-                </div>
-        </div>
-    </header>
+<?php include_once "header.php" ?>
+
     <section class="hero h-100 d-flex position-relative align-items-center" id="bg-contacto">
             <div class="hero-div-diagonal"></div>
             <div class="container-fluid position-relative">
@@ -164,7 +122,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <button type="submit" class="btn-pink">
+                                    <button type="submit" class="btn btn-pink">
                                         <span class="btn-text">COTIZAR</span>
                                     </button>
                                     <div>
@@ -176,21 +134,5 @@
                 </div>
             </div>
         </section>
-    <footer>
-        <div class="footer-container d-flex">
-            <div class="">
-                <h6>Copyright Kamo Eventos 2019 All rights reserved / Designed & developed by <a href="#">PUB Agency</a></h6>
-            </div>
-            <div class="ml-5">
-                <a href="">Polìtica de privacidad</a>
-            </div>
-        </div>
-        <div class=""></div>
-    </footer>
-    <script src="src/js/jquery-3.3.1.min.js"></script>
-    <script src="src/js/bootstrap.js"></script>
-    <script src="src/js/slick.min.js"></script>
-    <script src="src/js/lightbox.js"></script>
-    <script src="src/js/main.js"></script>
-</body>
-</html>
+
+<?php include_once "footer.php" ?>

@@ -22,7 +22,7 @@ header {
     width: 100%;
     height: 130px;
     position: fixed;
-    z-index: 214;
+    z-index: 20000;
     transition: all .3s;
     .header-logo {
         cursor: pointer;
@@ -60,22 +60,30 @@ header {
                 list-style: none;
                 font-size: 30px;
                 position: relative;
-                li {
+                .nav-item {
                     font-size: 25px;
-                    padding-top: 15px;
                     position: relative;
-                    &:hover{
-                        color: $dark-pink;
-                        &:before {
-                            content: "";
-                            height: 35px;
-                            width: 5px;
-                            position: absolute;
-                            background: $dark-pink;
-                            bottom: 5px;
-                            left: -15px;
+
+                    .nav-link {
+                        color: #fff;
+                        transition: all .4s;
+                        padding-left: 0;
+                        &:hover{
+                            color: $dark-pink;
+                            &:before {
+                                content: "";
+                                height: 30px;
+                                width: 5px;
+                                position: absolute;
+                                background: $dark-pink;
+                                top: 10px;
+                                left: -15px;
+                            }
                         }
+
+
                     }
+                   
 
                 }
                 &-social {
@@ -129,7 +137,7 @@ header {
     padding: 0;
     display: flex;
     &-left-img {
-        background-image: url(../img/bg-left-1.jpg);
+        background-image: url(../img/consola-intro.png);
         padding: 0;
         background-size: cover;
         img {
@@ -182,65 +190,45 @@ header {
             color: $transparent-gray;
         }
     }
-    &-options {
-        //flex-direction: row;
-        i {
-            font-size: 35px;
-            color: $dark-pink;
-        }
-        h3 {
-            font-family: JosefinSansBold;
-            font-size: 35px;
-            color: $white;
-        }
+   
+}
 
-        &-sonido{
-            height: 416px;
-            background: rgba(0, 0, 0, 0.58);
-            //margin: 0.2em;
-            &-content {
-                padding-top: 8em;
-            }
-            &-title {
-                padding-top: 1.4rem;
-            }
-            &-button-pink{
-                padding: 1rem;
-            }
-        }
-        &-iluminacion{
-            height: 416px;
-            background: rgba(0, 0, 0, 0.58);
-            //margin: 0.2em;
-            &-content {
-                padding-top: 8em;
-            }
-            &-title {
-                padding-top: 1.4rem;
-            }
-            &-button-pink{
-                padding: 1rem;
-            }
-        }
-        &-fotografia{
-            height: 416px;
-            background: rgba(0, 0, 0, 0.58);
-            //margin: 0.2em;
-            &-content {
-                padding-top: 8em;
-            }
-            &-title {
-                padding-top: 1.4rem;
-            }
-            &-button-pink{
-                padding: 1rem;;
-            }
-        }
+
+.item-service {
+    padding: 6rem 2rem;
+    background-color: rgba(0, 0, 0, 0.57);
+
+    i {
+        font-size: 35px;
+        color: $dark-pink;
+    }
+    h3 {
+        font-family: JosefinSansBold;
+        font-size: 35px;
+        color: $white;
+    }
+
+    &-interior{
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
 }
-.hero-pages {
-    //height: 565px !important;
+
+#interior{
+    &-fotografia{
+        background-image: url('../img/bg-photography.png');
+    }
+
+    &-sonido {
+        background-image: url('../img/bg-sound.png');
+    }
+    
+    &-iluminacion {
+        background-image: url('../img/bg-ilumination.png')
+    }
 }
+
 
 /*SLIDER STYLE*/
 .slick-arrow {
@@ -640,13 +628,8 @@ button.slick-next, button.slick-next:hover {
         z-index: 32;
     }
 }
-.our-ilumination-services {
-    background-image: $white;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-bottom: 5em;
-    padding-top: 5em;
+.add-services {
+    
     h2 {
         font-size: 40px;
         color: $dark-purple;
@@ -658,44 +641,7 @@ button.slick-next, button.slick-next:hover {
             color: $transparent-gray;
         }
     }
-    &-options {
-        justify-content: space-between;
-        i {
-            font-size: 35px;
-            color: $dark-pink;
-        }
-        h3 {
-            font-family: JosefinSansBold;
-            font-size: 35px;
-            color: $white;
-        }
-        &-sound {
-            height: 316px;
-            background: url(../img/sound.png);
-            &-content {
-                padding-top: 4em;
-            }
-            &-title {
-                padding-top: 1.4rem;
-            }
-            &-button-pink{
-                padding: 1rem;;
-            }
-        }
-        &-fotografia {
-            height: 316px;
-            background: url(../img/bg-photography.png);
-            &-content {
-                padding-top: 4em;
-            }
-            &-title {
-                padding-top: 1.4rem;
-            }
-            &-button-pink{
-                padding: 1rem;;
-            }
-        }
-    }
+
 }
 
 /*CONTACT PAGE*/
@@ -816,8 +762,8 @@ button.slick-next, button.slick-next:hover {
     height: 50px;
     width: 50px;
     position: fixed;
-    bottom: 120px;
-    right: 30px;
+    bottom: 100px;
+    right: 25px;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -846,7 +792,7 @@ button.slick-next, button.slick-next:hover {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    z-index: 123213;
+    z-index: 5;
 }
 .embed-container iframe {
     position: absolute;

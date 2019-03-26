@@ -1,46 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kamo</title>
-    <link href="src/css/bootstrap.css" rel="stylesheet">
-    <link href="src/css/fontawesome-all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/slick.css"/>
-    <link rel="stylesheet" href="src/css/slick-theme.css"/>
-    <link rel="stylesheet" href="src/css/lightbox.css">   
-    <link href="src/css/style.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-            <img src="src/img/Logo-Kamo-blanco.png" alt="logo-kamo">
-        </div>
-        <div class="header-menu">
-            <i class="fas fa-ellipsis-v"></i>
-            <nav class="header-menu-nav navbar navbar-expand navbar-expand-lg navbar-expand-md navbar-expand-sm">
-                <div class="header-menu-nav-container">
-                    <div class="header-menu-nav-container-hover"></div>
-                    <li>INICIO</li>
-                    <li id="smooth-scroll-js" onclick="location.href='#sobre-nosotros'"><a class="sobre-nosotros">SOBRE NOSOTROS</a></li>
-                    <li onclick="location.href='#servicios'">SERVICIOS</li>
-                    <li class="d-none" onclick="location.href='#alquiler-de-equipos'">ALQUILER DE EQUIPOS</li>
-                    <li onclick="location.href='#galeria'">GALERÍA</li>
-                    <li onclick="location.href='#testimonios'">TESTIMONIOS</li>
-                    <li class="d-none" onclick="location.href='#blog'">BLOG</li>
-                    <li onclick="location.href='#contactanos'">CONTÁCTANOS</li>
-                    <div class="header-menu-nav-container-social">
-                        <a href="https://www.facebook.com/Kamo-Eventos-301166994087711/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/kamoeventos/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en"><i class="fab fa-whatsapp"></i></a>
-                        <a href="mailto:hola@kamoeventos.com"><i class="far fa-envelope-open"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php include_once "header.php" ?>
+
     <section class="hero col-12 d-flex position-relative align-items-center">
         <div class="hero-div-diagonal"></div>
         <div class="container-fluid">
@@ -51,7 +10,7 @@
                 <h5>En Kamo Eventos hacemos que tu fiesta sea una experiencia inolvidable, con equipos de alta tecnología y personal experto en la planeación y ejecución de eventos</h5>
             </div>
             <div class="hero-button">
-                <button class="btn-pink"><span class="btn-text">CONOCE MÁS</span></button>
+                <a href="#sobre-nosotros" class="btn btn-pink"><span class="position-relative">CONOCE MÁS</span></a>
             </div>
             <video autoplay muted loop id="myVideo" class="position-absolute">
                 <source src="src/img/Dj - 3360.mp4" type="video/mp4">
@@ -105,53 +64,34 @@
             <div class="our-services-subtitle">
                 <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis fugit ut explicabo nesciunt expedita quos porro rerum autem nulla et quidem perspiciatis dolorem facere doloremque, saepe quis molestias odio.</h5>
             </div>
-            <div class="our-services-options col-12 d-flex">
-                <div class="our-services-options-sonido col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="our-services-options-sonido-content">
-                        <div class="our-services-options-sonido-icon"><i class="fas fa-volume-off"></i></div>
-                        <div class="our-services-options-sonido-title"><h3>SONIDO</h3></div>
-                        <div class="our-services-options-sonido-button-pink">
-                            <button class="btn-pink" onclick="location.href='sonido.html';">
-                                <span class="btn-text">VER SERVICIO</span>
-                            </button>
-                        </div>
-                        <div class="our-services-options-sonido-button-green    ">
-                            <button class="btn-green" onclick="location.href='contacto.html';">
-                                <span class="btn-text">COTIZAR</span>
-                            </button>   
-                        </div>
+            <div class="row mt-4">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-1">
+                    <div class="item-service d-flex flex-column justify-content-center align-items-center">
+                        <i class="fas fa-volume-off"></i>
+                        <h3 class="mt-3 mb-4">SONIDO</h3>
+                        
+                        <a href="sonido.php" class="btn btn-pink mb-2"><span class="position-relative">VER SERVICIO</span></a>
+                        <a href="contacto.php" class="btn btn-green"><span class="position-relative">COTIZAR</span></a> 
                     </div>
                 </div>
-                <div class="our-services-options-iluminacion col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="our-services-options-iluminacion-content">
-                        <div class="our-services-options-iluminacion-icon"><i class="fas fa-lightbulb"></i></div>
-                        <div class="our-services-options-iluminacion-title"><h3>ILUMINACIÓN</h3></div>
-                        <div class="our-services-options-iluminacion-button-pink">
-                            <button class="btn-pink" onclick="location.href='iluminacion.html';">
-                                <span class="btn-text">VER SERVICIO</span>
-                            </button>
-                        </div>
-                        <div class="our-services-options-iluminacion-button-green">
-                            <button class="btn-green" onclick="location.href='contacto.html';">
-                                <span class="btn-text">COTIZAR</span>
-                            </button>   
-                        </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-1">
+                    <div class="item-service d-flex flex-column justify-content-center align-items-center">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3 class="mt-3 mb-4">ILUMINACIÓN</h3>
+                        
+                        <a href="iluminacion.php" class="btn btn-pink mb-2"><span class="position-relative">VER SERVICIO</span></a>
+                        <a href="contacto.php" class="btn btn-green"><span class="position-relative">COTIZAR</span></a> 
                     </div>
                 </div>
-                <div class="our-services-options-fotografia col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="our-services-options-fotografia-content">
-                        <div class="our-services-options-fotografia-icon"><i class="fas fa-camera"></i></div>
-                        <div class="our-services-options-fotografia-title"><h3>FOTOGRAFÍA</h3></div>
-                        <div class="our-services-options-fotografia-button-pink">
-                            <button class="btn-pink" onclick="location.href='fotografia.html';">
-                                <span class="btn-text">VER SERVICIO</span>
-                            </button>
-                        </div>
-                        <div class="our-services-options-fotografia-button-green">
-                            <button class="btn-green" onclick="location.href='contacto.html';">
-                                <span class="btn-text">COTIZAR</span>
-                            </button>   
-                        </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-1">
+                    <div class="item-service d-flex flex-column justify-content-center align-items-center">
+                        <i class="fas fa-camera"></i>
+                        <h3 class="mt-3 mb-4">FOTOGRAFÍA</h3>
+                        
+                        <a href="fotografia.php" class="btn btn-pink mb-2"><span class="position-relative">VER SERVICIO</span></a>
+                        <a href="contacto.php" class="btn btn-green"><span class="position-relative">COTIZAR</span></a> 
                     </div>
                 </div>
             </div>
@@ -350,7 +290,7 @@
                                 <div class="form-group">
                                     <textarea class="form-control" rows="3" placeholder="¿Qué necesitas?"></textarea>
                                 </div>
-                                <button type="submit" class="btn-pink">
+                                <button type="submit" class="btn btn-pink">
                                     <span class="btn-text">ENVIAR</span>
                                 </button>
                                 <div>
@@ -361,45 +301,5 @@
                 </div>
             </div>
         </section>
-    <footer>
-        <div class="footer-container d-flex">
-            <div class="copyright">
-                <h6>Copyright Kamo Eventos 2019 All rights reserved / Designed & developed by <a href="#">PUB Agency</a></h6>
-            </div>
-            <div class="ml-5">
-                <h6><a href="#">Polìtica de privacidad</a></h6>
-            </div>
-        </div>
-        <a href="#0" class="cd-top"><i class="fas fa-angle-up"></i></a>
-    </footer>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TN6HC3D');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN6HC3D"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5c92b79dc37db86fcfcf04c5/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <script src="src/js/jquery-3.3.1.min.js"></script>
-    <script src="src/js/bootstrap.js"></script>
-    <script src="src/js/slick.min.js"></script>
-    <script src="src/js/lightbox.js"></script>
-    <script src="src/js/main.js"></script>
-</body>
-</html>
+        
+<?php include_once "footer.php" ?>

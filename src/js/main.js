@@ -148,6 +148,10 @@ jQuery(document).ready(function($){
     );
   });
 
+  //smooth scroll ancles
+
+  $('html').smoothScroll();
+
 });
 });
 
