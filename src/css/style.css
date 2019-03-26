@@ -242,10 +242,52 @@ a:hover {
   /*PAGES*/
   .hero-pages {
     height: 480px !important;
+    position: relative;
+  }
+  .hero-pages::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 1, 45, 0.48) !important;
   }
 
   .embed-container {
     bottom: 3em;
+  }
+
+  #bg-sonido {
+    background-image: url(../img/sonido.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #bg-iluminacion {
+    background-image: url(../img/iluminacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #bg-fotografia {
+    background-image: url(../img/fotografia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #bg-contacto {
+    background-image: url(../img/contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
   }
 
   .sound-features img {
@@ -629,7 +671,7 @@ a:hover {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(34, 1, 45, 0.78) !important;
+    background-color: rgba(34, 1, 45, 0.48) !important;
   }
 
   #bg-sonido {
@@ -851,7 +893,7 @@ header .header-menu-nav-container-social i:hover {
   left: 0;
   bottom: 0;
   height: 800px;
-  background-color: rgba(34, 1, 45, 0.78);
+  background-color: rgba(34, 1, 45, 0.48);
   z-index: -1;
 }
 .hero-div-diagonal::before {
@@ -1474,7 +1516,6 @@ button.slick-prev, button.slick-prev:hover {
 }
 .contact-page-right-content .container p {
   color: #848484;
-  padding: 20px;
 }
 .contact-page-right-content .container .colapse-div {
   background: #2a0041;
@@ -1504,7 +1545,7 @@ button.slick-prev, button.slick-prev:hover {
   border-radius: unset;
 }
 .contact-page-right-content .container form p {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 .contact-page-right-content .container form .form-check-input {
   height: 20px;

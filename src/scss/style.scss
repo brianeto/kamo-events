@@ -109,7 +109,7 @@ header {
         left: 0;
         bottom: 0;
         height: 800px;
-        background-color: rgba(34, 1, 45, 0.78);
+        background-color: rgba(34, 1, 45, 0.48);
         z-index: -1;
         &::before{
             background-image: url(../img/sonido.jpg);
@@ -752,7 +752,6 @@ button.slick-next, button.slick-next:hover {
             }
             p {
                 color: $gray;
-                padding: 20px;
             }
             .colapse-div {
                 background: $dark-purple;
@@ -783,7 +782,7 @@ button.slick-next, button.slick-next:hover {
                     border-radius: unset;
                 }
                 p {
-                    padding: 20px;
+                    padding: 20px 20px 0 20px;
                 }
                 .form-check-input {
                     height: 20px;
