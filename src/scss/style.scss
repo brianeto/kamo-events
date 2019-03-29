@@ -1,6 +1,5 @@
 @import "_variables.scss";
 @import "_typography.scss";
-@import "_mixins.scss";
 @import "_slick-slider.scss";
 
 html{
@@ -11,6 +10,14 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+}
+
+.section-padding{
+    padding: 6rem 0;
+}
+
+.box-padding{
+    padding: 6rem 4rem;
 }
 #myVideo {
     left: 0; 
@@ -103,6 +110,10 @@ header {
     background-color: #2a0041;
     padding: 1rem 2rem;
 }
+
+
+
+
 .hero {
     color: $white;
     display: flex;
@@ -112,21 +123,19 @@ header {
     position: relative;
     z-index: 3;
     overflow: hidden;
-    &-div-diagonal {
+    
+    
+
+    &::before{
+        content: '';
         position: absolute;
-        width: 150%;
+        width: 100%;
+        height: 100%;
+        top: 0;
         left: 0;
-        bottom: 0;
-        height: 800px;
-        background-color: rgba(34, 1, 45, 0.48);
-        z-index: -1;
-        &::before{
-            background-image: url(../img/sonido.jpg);
-        }
+        background-color: rgba(34, 1, 45, 0.78)
     }
-    .container {
-        position: absolute;
-    }
+
     &-subtitle {
         margin-bottom: 5rem;
         h5 {
@@ -302,18 +311,18 @@ header {
 
 .testimonies {
     background: $dark-purple;
-    padding-top: 5rem;
-    padding-bottom: 8rem;
+    
     button.slick-next, button.slick-next:hover {
     }
     button.slick-prev, button.slick-prev:hover {
     }
     .slick-dots {
-        bottom: -50px;
+       bottom: 0;
     }
     .card {
         background: none;
         border: none;
+        padding: 3rem 0;
         &-img {
             display: inline-block;
             width: 200px;
@@ -439,10 +448,7 @@ header {
 }
 footer {
     background: $black;
-    .footer-container {
-        margin-left: 12%;
-        color: $white;
-    }
+    color: $white;
 }
 .slick-prev:before {
     content: '';
@@ -488,63 +494,10 @@ button.slick-next, button.slick-next:hover {
   }
 
 /*SONIDO PAGE*/
-.video {
-    position: relative;
-    &-container {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        left: 50%;
-        margin-left: -560px;
-        margin-top: -200px;
-        z-index: 32;
-    }
-}
-.sound-features {
-    height: 1000px;
-    img {
-        width:550px;
-    }
-    .container {
-        padding: 0;
-    }
-    &-montaje {
-        display: flex;
-        //margin-top: -20rem;
-        &-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            //margin-right: 5em;
-            h2 {
-                color: $dark-purple;
-            }
-            p {
-                color: $gray;
-            }
-        }
-    }
-    &-dj {
-        display: flex;
-        margin-top: 5rem;
-        &-right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            //margin-left: 5em;
-        }
-        h2 {
-            color: $dark-purple;
-        }
-        p {
-            color: $gray;
-        }
-    }
-}
+
+
 .advisory {
     background: $dark-purple;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
     .container{
         color: $white;
         .advisory-title {
@@ -617,18 +570,7 @@ button.slick-next, button.slick-next:hover {
 }
 
 /*ILUMINACION PAGE*/
-.video {
-    position: relative;
-    &-container {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        left: 50%;
-        margin-left: -560px;
-        margin-top: -200px;
-        z-index: 32;
-    }
-}
+
 .add-services {
     
     h2 {
@@ -647,17 +589,15 @@ button.slick-next, button.slick-next:hover {
 
 /*CONTACT PAGE*/
 .contact-page {
-    padding: 0;
-    display: flex;
+    
     &-left-img {
-        background-image: url(../img/bg-left-contact.png);
-        padding: 0;
-        background-size: cover;
+        
+        
         &-container{
             padding: 4rem;
             background-image: linear-gradient(139deg, #2a0041, rgba(122, 17, 83, 0.76));
-            margin: 5rem;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             img {
                 width: 50%;
             }
@@ -671,9 +611,7 @@ button.slick-next, button.slick-next:hover {
                 font-size: 25px;
                 font-family: Sarabun;
             }
-            .text-center {
-                margin-bottom: 5rem;
-            }
+    
             .text-left {
                 margin: 1rem;
                 i {
@@ -692,10 +630,9 @@ button.slick-next, button.slick-next:hover {
     }
     &-right-content {
         .container{
-            padding: 6rem 4rem;
+            
             h2 {
                 color: $dark-purple;
-                font-size: 65px;
             }
             p {
                 color: $gray;
@@ -789,17 +726,48 @@ button.slick-next, button.slick-next:hover {
     opacity: 1;
   }
   /*VIDEO PAGES*/
-  .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    z-index: 3;
-}
-.embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 18%;
-    width: 65%;
-    height: 65%;
-}
+  
+  .section-video{
+      z-index: 1000;
+      transform: translateY(-130px);
+      .video-iframe{
+          width: 90%;
+          height: 500px;
+      }
+  }
+
+  .hero-pages{
+      height: 565px;
+      z-index: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+  }
+
+  #bg-sonido {
+    background-image: url(../img/sonido.jpg);
+  }
+  #bg-iluminacion {
+    background-image: url(../img/iluminacion.jpg);
+  }
+  #bg-fotografia {
+    background-image: url(../img/fotografia.jpg);
+  }
+  #bg-contacto {
+    background-image: url(../img/contacto.png);
+    height: 500px !important;
+  }
+
+  #contact-page{
+    background-image: url(../img/bg-left-contact.png);
+  }
+
+  .service-features{
+    padding-top: 0;
+
+    h2{
+        color: $dark-purple;
+    }
+  }
+

@@ -112,6 +112,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 }
 
-$clSection = "header-static";
+$clSection = "header-sticky";
 require 'views/cotizar.view.php';
 ?>

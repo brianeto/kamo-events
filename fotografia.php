@@ -1,64 +1,55 @@
-<?php
-$idSection = "header-sticky";
+<?php 
+$clSection = "header-sticky";
 include_once "header.php";
 ?>
 
     <section class="hero hero-pages d-flex position-relative align-items-center" id="bg-fotografia">
-        <div class="hero-div-diagonal"></div>
         <div class="container-fluid position-relative">
             <div class="hero-title">
                 <h2 class="white">FOTOGRAFÍA</h2>
             </div>
              <div class="hero-subtitle">
-                <h5>EN Kamo Eventos hacemos que tu fiesta sea una experiencia inolvidable, con equipos de alta tecnología y personal experto en la ejecución de eventos</h5>
+                <h5>En Kamo Eventos hacemos que tu fiesta sea una experiencia inolvidable, con equipos de alta tecnología y personal experto en la ejecución de eventos</h5>
             </div>
+        </div>
+    </section>
 
-        </div>
-    </section>
-    <section class="video col-lg-12">
-        <div class="embed-container">
-            <iframe width="962" height="541" src="https://www.youtube.com/embed/pRlEEDYFtQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section class="sound-features">
+    <section class="section-video">
         <div class="container">
-            <div class="sound-features-montaje">
-                <div class="sound-features-montaje-left">
-                    <div>
-                        <h2>EFECTOS ESPECIALES</h2>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, perferendis quibusdam? Sint sit molestias voluptatum vero ducimus exercitationem laudantium laboriosam quod cupiditate culpa rerum ipsam tenetur, consequatur et quo consequuntur!</p>
-                    </div>
-                </div>
-                <div class="sound-features-montaje-right">
-                    <div>
-                        <img src="src/img/efectos-especiales.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="sound-features-dj">
-                <div class="sound-features-dj-left">
-                    <div>
-                        <img src="src/img/montajes-evento.jpg" alt="">
-                    </div>
-                </div>
-                <div class="sound-features-dj-right">
-                    <div>
-                        <h2>MONTAJES A LA MEDIDA DE TU EVENTO</h2>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, perferendis quibusdam? Sint sit molestias voluptatum vero ducimus exercitationem laudantium laboriosam quod cupiditate culpa rerum ipsam tenetur, consequatur et quo consequuntur!</p>
-                    </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/10lQyCOdfng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sound-slider sound-slider-photography text-center">
+    
+    <section class="service-features section-padding">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-6 order-1 order-md-1">
+                    <h2>MONTAJE PROFESIONAL</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, perferendis quibusdam? Sint sit molestias voluptatum vero ducimus exercitationem laudantium laboriosam quod cupiditate culpa rerum ipsam tenetur, consequatur et quo consequuntur!</p>
+                </div>
+                <div class="col-12 col-md-6 order-2 order-md-2">
+                    <img src="src/img/montaje-profesional.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 order-3 order-md-4 mt-5">
+                        <h2>MONTAJE PROFESIONAL</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, perferendis quibusdam? Sint sit molestias voluptatum vero ducimus exercitationem laudantium laboriosam quod cupiditate culpa rerum ipsam tenetur, consequatur et quo consequuntur!</p>
+                </div>
+                <div class="col-12 col-md-6 order-4 order-md-3 mt-5">
+                    <img src="src/img/dj-animador.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sound-slider text-center">
         <h3 class="pb-5">Siguenos en <a href="https://instagram.com/kamoeventos/" target="_blank">Instagram</a></h3>
         <!-- LightWidget WIDGET --><iframe src="//lightwidget.com/widgets/fc699e71db6753688ffa3f7e8cd9d31e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-    </section>        
-    <section class="advisory text-center">
+    </section>
+    <section class="advisory text-center section-padding">
         <div class="container">
             <div class="advisory-title">
                 <h3>¿No sabes qué necesitas para tu evento?</h3>
@@ -71,7 +62,7 @@ include_once "header.php";
             </div>
         </div>
     </section>
-    <section class="py-5 text-center add-services">
+    <section class="text-center add-services section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-12">

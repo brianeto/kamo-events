@@ -1,0 +1,267 @@
+
+@import "_variables.scss";
+@import "_typography.scss";
+@import "_mixins.scss";
+@import "_slick-slider.scss";
+/*================================ MOBILE DEVICES ==================================*/
+
+@include breakpoint(mobile) {
+
+    //General Styles
+    h2 {
+      font-size: 33px;
+    }
+    h5 {
+      font-size: 14px !important;
+    }
+    .section-padding{
+        padding: 2rem !important;
+    }
+
+    .box-padding{
+        padding: 2rem !important;
+    }
+  
+    .slick-dots {
+      bottom: -70px;
+    }
+
+
+    //Header
+    .header-sticky, .header-static {
+        position: relative;
+        background-color: $dark-purple;
+    }
+
+    header{
+        .header-logo .img-fluid{
+            width: 60%;
+        }
+  
+        .header-menu{
+            width: 100%;
+            position: relative;
+            padding: 0;
+            margin-top: 1rem;
+            border-top: 1px solid $white;
+            padding-top: 1rem;
+            background-color: transparent;
+  
+            .nav-link{
+                font-size: 1.5rem !important;
+            }
+        }
+  
+    }
+  
+    
+    //Home
+    .hero{
+        height: 500px !important;
+    }
+  
+    .item-service {
+        padding: 3rem 2rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .about-us {
+      &-left-img {
+          display: none;
+      }
+      &-right-content {
+          padding: 7em 3em;
+      }
+    }
+
+    .features {
+      text-align: center;
+    }
+
+    .slick-arrow{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .testimonies {
+        button.slick-next, button.slick-next:hover {
+          right: 0;
+        }
+        button.slick-prev, button.slick-prev:hover {
+          left: 0;
+        }
+        .card {
+            &-block {
+                padding: .3rem;
+                h4 {
+                    font-family: JosefinSans;
+                    color: $white;
+                    padding-top: 1.5rem;
+                }
+                span {
+                    color: $main-pink;
+                }
+                p {
+                    padding-top: 1rem;
+                    color: $transparent-gray;
+                }
+          }
+        }
+    
+      }
+
+    .our-services {
+      background-size: cover;
+    }
+
+    
+    .contact {
+      flex-direction: column-reverse;
+      &-left-img {
+          &-container{
+              padding: 1rem 0;
+              margin: 2rem;
+              a {
+                  font-size: 1rem;
+              }
+          }
+      }
+    }
+  
+
+    //Services pages
+  
+    .hero.hero-pages{
+        height: 400px !important;
+    }
+  
+    .video-iframe{
+        height: 200px !important;
+    }
+    .contact-right-content .container{
+       padding: 0 !important;
+    }
+
+    .hero-pages {
+      height: 480px !important;
+    }
+
+    .advisory {
+      margin-top: -14em;
+      .container{
+        .advisory-title h3{
+            font-size: 1.5rem;
+        }
+      }
+    }
+  
+ 
+  //Contact page
+
+  #bg-contacto{
+      height: 300px !important;
+
+      .hero-subtitle{
+          margin-bottom: 0;
+      }
+  }
+  .contact-page {
+    
+    &-left-img {
+        &-container{
+            padding: 1rem 0;
+            margin: 0 !important;
+            a {
+             font-size: 19px !important;
+            }
+        }
+    }
+    &-right-content {
+    
+        .container{
+            padding:0 !important;
+            h2 {
+                font-size: 35px !important;
+            }
+            form {
+
+                a {
+                    border-radius: unset;
+                }
+                p {
+                    padding: 20px;
+                }
+                .form-check-input {
+                    height: 20px;
+                    width: 20px;
+                }
+                .form-check-label {
+                    padding-left: 10px;
+                }
+            }
+        }
+  
+    }
+  }
+    footer {
+      background: $black;
+      .footer-container {
+          padding: 20px;
+          padding-bottom: 7rem;
+      }
+  }
+  }
+  
+  /*================================ TABLET DEVICES ==================================*/
+  
+  @include breakpoint(tablet) {
+  }
+  
+  /*================================ DESKTOP DEVICES ==================================*/
+  @include breakpoint(desktop) {
+  
+    .fixed-header{
+        background-color: black;
+        padding: 1rem 2rem;
+    }
+  
+    #sobre-nosotros .slick-dots {
+      bottom: -150px;
+    }
+    
+    .about-us {
+      &-right-content {
+          padding: 10em 6em;
+      }
+    }
+    
+    .testimonies {
+          button.slick-next, button.slick-next:hover {
+              right: 280px;
+          }
+          button.slick-prev, button.slick-prev:hover {
+              left: 280px;
+          }
+     }
+    .contact {
+        &-left-img {
+            &-container{
+                padding: 4rem;
+                margin: 5rem;
+                height: 80%;
+                a {
+                    text-decoration: none;
+                    font-size: 25px;
+                    font-family: Sarabun;
+                }
+            }
+        } 
+    }
+    /*PAGES*/
+   
+    
+    footer {
+      height: 85px;
+      padding-top: 2em;
+    }
+  }

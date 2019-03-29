@@ -3,12 +3,11 @@ include_once "header.php";
 ?>
 
     <section class="hero col-12 d-flex position-relative align-items-center">
-        <div class="hero-div-diagonal"></div>
         <div class="container-fluid">
-            <div class="hero-title">
+            <div class="hero-title position-relative">
                 <h2 class="white">VIVE UNA NUEVA<br>EXPERIENCIA</h2>
             </div>
-             <div class="hero-subtitle">
+             <div class="hero-subtitle position-relative">
                 <h5>En Kamo Eventos hacemos que tu fiesta sea una experiencia inolvidable, con equipos de alta tecnología y personal experto en la planeación y ejecución de eventos</h5>
             </div>
             <div class="hero-button">
@@ -41,24 +40,28 @@ include_once "header.php";
             </div>
         </div>
     </section>
-    <section class="features row col-12">
-        <div class="features-experiencia col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="src/img/fireworks.png" class="mb-4" alt="">
-            <h6 class="mb-4">Experiencia</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
-        </div>
-        <div class="features-responsabilidad col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="src/img/fireworks.png" class="mb-4" alt="">
-            <h6 class="mb-4">Responsabilidad</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
-        </div>
-        <div class="features-alegria col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="src/img/fireworks.png" class="mb-4" alt="">
-            <h6 class="mb-4">Alegría</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+    <section class="features section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="features-experiencia col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="src/img/fireworks.png" class="mb-4" alt="">
+                    <h6 class="mb-4">Experiencia</h6>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                </div>
+                <div class="features-responsabilidad col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="src/img/fireworks.png" class="mb-4" alt="">
+                    <h6 class="mb-4">Responsabilidad</h6>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                </div>
+                <div class="features-alegria col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="src/img/fireworks.png" class="mb-4" alt="">
+                    <h6 class="mb-4">Alegría</h6>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="servicios" class="our-services col-12">
+    <section id="servicios" class="our-services col-12 section-padding">
         <div class="container">
             <div class="our-services-title">
                 <h2 class="">NUESTROS SERVICIOS</h2>
@@ -193,7 +196,7 @@ include_once "header.php";
             </div>
         </div>
     </section>
-    <section id="testimonios" class="testimonies text-center">
+    <section id="testimonios" class="testimonies text-center section-padding">
             <div class="container">
                 <div class="testimonies-title">
                     <h2>TESTIMONIOS</h2>
@@ -243,74 +246,76 @@ include_once "header.php";
                 </div>
             </div>
     </section>
-    <section id="contactanos" class="contact col-lg-12">
-            <div class="contact-left-img col-lg-6">
-                <div class="contact-left-img-container">
-                    <div>
-                        <div class="text-center">
-                            <img src="src/img/Logo-Kamo-blanco.png" alt="">
-                        </div> 
-                        <div class="text-left">
-                            <a href="mailto:hola@kamoeventos.com" ><i class="far fa-envelope-open"></i>hola@kamoeventos.com</a>
-                        </div>   
-                        <div class="text-left">
-                            <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655</span></a>
-                        </div>
-                        <div class="text-left">
-                            <a href="https://www.instagram.com/kamoeventos/" target="_blank"><i class="fab fa-instagram"></i>kamoeventos</a>
-                        </div>
-                        <div class="text-left">
-                            <a href="https://www.facebook.com/Kamo-Eventos-301166994087711/" target="_blank"><i class="fab fa-facebook-f"></i>kamoeventos</a>
+    <section id="contactanos" class="contact">
+        <div class="row">
+            <div class="contact-left-img col-lg-6 order-2 order-md-1">
+                    <div class="contact-left-img-container">
+                        <div>
+                            <div class="text-center mb-5">
+                                <img src="src/img/Logo-Kamo-blanco.png" alt="">
+                            </div> 
+                            <div class="text-left">
+                                <a href="mailto:hola@kamoeventos.com" ><i class="far fa-envelope-open"></i>hola@kamoeventos.com</a>
+                            </div>   
+                            <div class="text-left">
+                                <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655</span></a>
+                            </div>
+                            <div class="text-left">
+                                <a href="https://www.instagram.com/kamoeventos/" target="_blank"><i class="fab fa-instagram"></i>kamoeventos</a>
+                            </div>
+                            <div class="text-left">
+                                <a href="https://www.facebook.com/Kamo-Eventos-301166994087711/" target="_blank"><i class="fab fa-facebook-f"></i>kamoeventos</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="contact-right-content col-lg-6">
-                <div class="container text-center">
-                    <div class="col-12">
-                           <form class="text-center" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                               <div>
-                                    <h2>CONTÁCTANOS</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci.</p>
-                                    
-                               </div>
-                                <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" placeholder="Tu nombre (requerido)" name="nombre" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" placeholder="Tu correo (requerido)" name="correo" required>
-                                </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Tu télefono o celular (requerido)" name="telefono" required>
-                                </div>
-                                <div class="form-group text-left">
-                                    <label><a href="">¿Tienes casa de eventos o un bar? (opcional)</a></label>
-                                    <input type="text" class="form-control" placeholder="Nombre de tu empresa" name="nombre_empresa">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="3" placeholder="¿Qué necesitas?" name="mensaje"></textarea>
-                                </div>
-                                <div class="confirmation">
-                                    <?php if (!empty($success)): ?>
-                                        <div class="alert alert-success" role="alert"><?php echo $success; ?></div>
-                                    <?php endif ?>
-
-                                    <?php if (!empty($errores)): ?>
-                                        <div class="alert alert-danger" role="alert"><?php echo $errores; ?></div>
-                                    <?php endif ?>
-                                </div>
-                                <button type="submit" class="btn btn-pink">
-                                    <span class="btn-text">ENVIAR</span>
-                                </button>
+                <div class="contact-right-content col-lg-6 box-padding order-1 order-md-2">
+                    <div class="container text-center">
+                        <div class="col-12">
+                            <form class="text-center" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <div>
-                                    <p>Al Enviar el mensaje aceptas los <a href="#">Terminos y Condiciones</a></p>
+                                        <h2>CONTÁCTANOS</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci.</p>
+                                        
                                 </div>
-                            </form>
+                                    <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Tu nombre (requerido)" name="nombre" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" placeholder="Tu correo (requerido)" name="correo" required>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Tu télefono o celular (requerido)" name="telefono" required>
+                                    </div>
+                                    <div class="form-group text-left">
+                                        <label><a href="">¿Tienes casa de eventos o un bar? (opcional)</a></label>
+                                        <input type="text" class="form-control" placeholder="Nombre de tu empresa" name="nombre_empresa">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" placeholder="¿Qué necesitas?" name="mensaje"></textarea>
+                                    </div>
+                                    <div class="confirmation">
+                                        <?php if (!empty($success)): ?>
+                                            <div class="alert alert-success" role="alert"><?php echo $success; ?></div>
+                                        <?php endif ?>
+
+                                        <?php if (!empty($errores)): ?>
+                                            <div class="alert alert-danger" role="alert"><?php echo $errores; ?></div>
+                                        <?php endif ?>
+                                    </div>
+                                    <button type="submit" class="btn btn-pink">
+                                        <span class="btn-text">ENVIAR</span>
+                                    </button>
+                                    <div>
+                                        <p>Al Enviar el mensaje aceptas los <a href="#">Terminos y Condiciones</a></p>
+                                    </div>
+                                </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </section>
         
 <?php include_once "footer.php"; ?>

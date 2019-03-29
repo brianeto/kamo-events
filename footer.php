@@ -1,13 +1,16 @@
 <footer>
-        <div class="footer-container d-flex">
-            <div class="copyright">
+    <div class="container">
+        <div class="row footer-container justify-content-between align-items-center">
+            <div class="copyright col-12 col-md-6">
                 <h6>Copyright Kamo Eventos 2019 All rights reserved / Designed & developed by <a href="#">PUB Agency</a></h6>
             </div>
-            <div class="ml-5">
+            <div class="col-12 col-md-3">
                 <a href="politica-de-privacidad.php">Política de privacidad</a>
             </div>
         </div>
-        <a href="#0" class="cd-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+        
+        <a href="#0" class="cd-top d-none d-md-block"><i class="fas fa-angle-up"></i></a>
     </footer>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

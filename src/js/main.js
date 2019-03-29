@@ -83,12 +83,10 @@ $(document).ready(function() {
   $(document).scroll(function() { 
       scroll_pos = $(this).scrollTop();
       if(scroll_pos > 680) {
-          $(".header-sticky").css('background-color', 'rgba(0,0,0,1)');
-          $(".header-sticky").css('padding', '1rem 2rem');
+          $(".header-sticky").addClass('fixed-header');
 
       } else {
-          $(".header-sticky").css('background-color', 'rgba(0,0,0,0)');
-          $(".header-sticky").css('padding', '2rem');
+          $(".header-sticky").removeClass('fixed-header');
       }
   });
 
