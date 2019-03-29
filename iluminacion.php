@@ -1,4 +1,7 @@
-<?php include_once "header.php" ?>
+<?php
+$clSection = "header-sticky";
+include_once "header.php";
+?>
 
     <section class="hero hero-pages d-flex position-relative align-items-center" id="bg-iluminacion">
         <div class="container-fluid position-relative">
@@ -63,7 +66,7 @@
                 <p>En Kamo Eventos te asesoramos sin costo</p>
             </div>
             <div class="advisory-button">
-                <a href="contacto.php" class="btn btn-green"><span class="position-relative">COTIZAR MI EVENTO</span></a>
+                <a href="cotizar.php?servicio=iluminacion" class="btn btn-green"><span class="position-relative">COTIZAR MI EVENTO</span></a>
             </div>
         </div>
     </section>
@@ -93,4 +96,4 @@
         </div>
     </section>
 
-<?php include_once "footer.php" ?>
+<?php include_once "footer.php"; ?>

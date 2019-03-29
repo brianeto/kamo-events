@@ -1,5 +1,4 @@
 <?php 
-$idSection = "header-sticky";
 include_once "header.php";
 ?>
 
@@ -66,7 +65,7 @@ include_once "header.php";
                 <p>En Kamo Eventos te asesoramos sin costo</p>
             </div>
             <div class="advisory-button">
-                <a href="cotizar.php?servicio=sonido" class="btn btn-green"><span class="position-relative">COTIZAR MI EVENTO</span></a>
+                <a href="contacto.php" class="btn btn-green"><span class="position-relative">COTIZAR MI EVENTO</span></a>
             </div>
         </div>
     </section>

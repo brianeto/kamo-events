@@ -4,7 +4,7 @@
                 <h6>Copyright Kamo Eventos 2019 All rights reserved / Designed & developed by <a href="#">PUB Agency</a></h6>
             </div>
             <div class="ml-5">
-                <h6><a href="#">Polìtica de privacidad</a></h6>
+                <a href="politica-de-privacidad.php">Política de privacidad</a>
             </div>
         </div>
         <a href="#0" class="cd-top"><i class="fas fa-angle-up"></i></a>
