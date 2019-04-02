@@ -1,6 +1,3 @@
-<?php 
-include_once "header.php";
-?>
 
     <section class="hero position-relative align-items-center" id="bg-contacto">
             <div class="container position-relative">
@@ -28,7 +25,10 @@ include_once "header.php";
                                 <a href="mailto:hola@kamoeventos.com"><i class="far fa-envelope-open"></i>hola@kamoeventos.com</a>
                             </div>   
                             <div class="text-left">
-                                <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en"><i class="fab fa-whatsapp"></i><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en"><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en"><span>3102627655</span></a>
+                                <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>Angel Burgos: 3102627655</span></a>
+                            </div>
+                            <div class="text-left">
+                                <a href="https://wa.me/573124511518?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>Alejandro Aguilar: 3124511518</span></a>
                             </div>
                             <div class="text-left">
                                 <a href="https://www.instagram.com/kamoeventos/"><i class="fab fa-instagram"></i>kamoeventos</a>
@@ -166,8 +166,6 @@ include_once "header.php";
                         </div>
                     </div>
                 </div>
-        </div>
-            
-        </section>
+        </div>  
+    </section>
 
-<?php include_once "footer.php"; ?>

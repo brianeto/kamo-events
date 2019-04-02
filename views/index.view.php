@@ -1,6 +1,3 @@
-<?php
-include_once "header.php";
-?>
 
     <section class="hero col-12 d-flex position-relative align-items-center">
         <div class="container-fluid">
@@ -25,16 +22,12 @@ include_once "header.php";
             <div class="container">
                 <div class="about-us-slider">
                     <div>
+                        <h2>UNA NUEVA EXPERIENCIA</h2>
+                        <p>El mercado de los eventos necesita ideas nuevas, refrescantes y sobre todo hacer felices a quienes asisten una fiesta o reunión, por esta razón, nace en Colombia Kamo Eventos, <em>una nueva experiencia.</em></p>
+                    </div>
+                    <div>
                         <h2>SOBRE NOSOTROS</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla illum quasi perferendis rerum quibusdam minima earum unde, ab, provident minus qui repellendus voluptatibus natus, sit hic aspernatur quam asperiores.</p>
-                    </div>
-                    <div>
-                        <h2>SOBRE NOSOTROS x2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae!</p>
-                    </div>
-                    <div>
-                        <h2>SOBRE NOSOTROS x3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci, tempora molestiae!</p>
+                        <p>Somos una empresa realizadora de eventos con ideas jóvenes y producción experta en cualquier tipo de evento. Realizamos eventos sociales, familiares y corporativos entre otros.</p>
                     </div>
                 </div>
             </div>
@@ -46,17 +39,17 @@ include_once "header.php";
                 <div class="features-experiencia col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="src/img/fireworks.png" class="mb-4" alt="">
                     <h6 class="mb-4">Experiencia</h6>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                    <p class="text-justify">Nuestros profesionales cuentan con más de 10 años de experiencia en la producción de eventos.</p>
                 </div>
                 <div class="features-responsabilidad col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="src/img/fireworks.png" class="mb-4" alt="">
                     <h6 class="mb-4">Responsabilidad</h6>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                    <p class="text-justify">Sabemos que tu evento es un acontecimiento muy importante y esto implica un gran compromiso de nuestra parte, para que todo salga como lo soñaste… Incluso mejor.</p>
                 </div>
                 <div class="features-alegria col-lg-4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <img src="src/img/fireworks.png" class="mb-4" alt="">
-                    <h6 class="mb-4">Alegría</h6>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro distinctio maxime consequatur explicabo laudantium molestiae alias officiis nostrum possimus dicta quas corrupti, sed, blanditiis nobis odit. Atque, pariatur odio?</p>
+                    <h6 class="mb-4">Pasión</h6>
+                    <p class="text-justify">Nos encanta nuestro trabajo, por eso en cada evento ponemos todo nuestro empeño y dedicación para sentirnos felices de entregarte un servicio impecable.</p>
                 </div>
             </div>
         </div>
@@ -67,7 +60,7 @@ include_once "header.php";
                 <h2 class="">NUESTROS SERVICIOS</h2>
             </div>
             <div class="our-services-subtitle">
-                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis fugit ut explicabo nesciunt expedita quos porro rerum autem nulla et quidem perspiciatis dolorem facere doloremque, saepe quis molestias odio.</h5>
+                <h5>Explora a continuación nuestros servicios, contamos con expertos en cada área y equipos de última tecnología.</h5>
             </div>
             <div class="row mt-4">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-1">
@@ -207,48 +200,26 @@ include_once "header.php";
                             <img class="img-fluid" src="src/img/women.png" alt="Card image">
                           </div>
                           <div class="card-block">
-                            <h4>AMANDA RODRÍGUEZ</h4>
-                            <span>Propietaria eventos Zafiro</span>
-                            <p>Lorem ipsum dolor sit amet constur adipisicing elit, sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion</p>
+                            <h4>MERLEY PACHECO</h4>
+                            <span>Propietaria eventos El Zafiro</span>
+                            <p>“Tienen excelentes DJ’s y Sonido. Mi casa de eventos siempre cuenta con su servicio y los invitados salen felices.”</p>
                           </div>
                         </div>
                         <div class="card text-center">
                           <div class="card-img mx-auto">
-                            <img class="img-fluid" src="src/img/women.png" alt="Card image">
+                            <img class="img-fluid rounded-circle" src="src/img/avatar-hombre.jpg" alt="Card image">
                           </div>
                           <div class="card-block">
-                            <h4>AMANDE RODRÍGUEZ</h4>
-                            <span>Propietaria eventos Zafiro</span>
-                            <p>Lorem ipsum dolor sit amet constur adipisicing elit, sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion</p>
+                            <h4>JAIME ROMERO</h4>
+                            <p>“Los he contratado para todas mis fiestas familiares. Me ha gustado mucho su trabajo”</p>
                           </div>
                         </div>
-                        <div class="card text-center">
-                          <div class="card-img mx-auto">
-                            <img class="img-fluid" src="src/img/women.png" alt="Card image">
-                          </div>
-                          <div class="card-block">
-                            <h4>AMANDO RODRÍGUEZ</h4>
-                            <span>Propietaria eventos Zafiro</span>
-                            <p>Lorem ipsum dolor sit amet constur adipisicing elit, sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion</p>
-                          </div>
-                        </div>
-                        <div class="card text-center">
-                          <div class="card-img mx-auto">
-                            <img class="img-fluid" src="src/img/women.png" alt="Card image">
-                          </div>
-                          <div class="card-block">
-                            <h4>AMANDI RODRÍGUEZ</h4>
-                            <span>Propietaria eventos Zafiro</span>
-                            <p>Lorem ipsum dolor sit amet constur adipisicing elit, sed do eiusmtempor incid et dolore magna aliqu enim minim veniam quis nostrud exercittion</p>
-                          </div>
-                        </div>
-                       
                 </div>
             </div>
     </section>
     <section id="contactanos" class="contact">
         <div class="row">
-            <div class="contact-left-img col-lg-6 order-2 order-md-1">
+            <div class="contact-left-img col-12 col-md-6 order-2 order-md-1">
                     <div class="contact-left-img-container">
                         <div>
                             <div class="text-center mb-5">
@@ -258,7 +229,10 @@ include_once "header.php";
                                 <a href="mailto:hola@kamoeventos.com" ><i class="far fa-envelope-open"></i>hola@kamoeventos.com</a>
                             </div>   
                             <div class="text-left">
-                                <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655 -</span></a><a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><span>3102627655</span></a>
+                                <a href="https://wa.me/573102627655?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>Angel Burgos: 3102627655</span></a>
+                            </div>
+                            <div class="text-left">
+                                <a href="https://wa.me/573124511518?text=Hola Kamo Eventos, estoy interesad@ en" target="_blank"><i class="fab fa-whatsapp"></i><span>Alejandro Aguilar: 3124511518</span></a>
                             </div>
                             <div class="text-left">
                                 <a href="https://www.instagram.com/kamoeventos/" target="_blank"><i class="fab fa-instagram"></i>kamoeventos</a>
@@ -269,13 +243,13 @@ include_once "header.php";
                         </div>
                     </div>
                 </div>
-                <div class="contact-right-content col-lg-6 box-padding order-1 order-md-2">
+                <div class="contact-right-content col-12 col-md-6 box-padding order-1 order-md-2">
                     <div class="container text-center">
                         <div class="col-12">
                             <form class="text-center" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                                 <div>
                                         <h2>CONTÁCTANOS</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro vel rem nihil, dolore enim fugit quo fugiat sequi dolor deserunt blanditiis animi eius nostrum maxime id adipisci.</p>
+                                        <p>Déjanos tus datos en el formulario y te contactaremos pronto</p>
                                         
                                 </div>
                                     <div class="form-row">
@@ -317,5 +291,3 @@ include_once "header.php";
                 </div>
         </div>
     </section>
-        
-<?php include_once "footer.php"; ?>

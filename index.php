@@ -76,5 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $clSection = "header-sticky";
+include_once "header.php";
 require 'views/index.view.php';
-?>
+include_once "footer.php";

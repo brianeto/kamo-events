@@ -72,6 +72,10 @@
   color: #ffffff;
 }
 
+.text-theme-dark {
+  color: #848484;
+}
+
 @font-face {
   font-family: JosefinSansBold;
   src: url(../fonts/JosefinSans-Bold.ttf);
@@ -152,6 +156,10 @@ a:hover {
   border-color: #ffffff;
 }
 
+/* define breackpoints */
+/* not needed */
+/* define mixin */
+/* usage */
 html {
   overflow-x: hidden;
 }
@@ -294,11 +302,6 @@ header .header-menu .menu-nav-social .nav-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.features {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 .features h6 {
   font-family: JosefinSansBold;
   font-size: 23px;
@@ -310,15 +313,6 @@ header .header-menu .menu-nav-social .nav-link:hover {
 .features img {
   color: #7a1153;
   width: 60px;
-}
-.features-experiencia {
-  max-width: 30rem;
-}
-.features-responsabilidad {
-  max-width: 30rem;
-}
-.features-alegria {
-  max-width: 30rem;
 }
 
 .our-services {
@@ -469,7 +463,6 @@ header .header-menu .menu-nav-social .nav-link:hover {
 /*CONTACT SECTION*/
 .contact {
   padding: 0;
-  display: flex;
 }
 .contact-left-img {
   background-image: url(../img/bg-left-contact.png);
@@ -707,6 +700,10 @@ button.slick-prev, button.slick-prev:hover {
   text-decoration: none;
   font-size: 25px;
   font-family: Sarabun;
+  transition: all 0.3s;
+}
+.contact-page-left-img-container a:hover {
+  opacity: 0.6;
 }
 .contact-page-left-img-container .text-left {
   margin: 1rem;
@@ -856,6 +853,226 @@ button.slick-prev, button.slick-prev:hover {
 }
 .service-features h2 {
   color: #2a0041;
+}
+.service-features p {
+  color: #848484;
+}
+
+/*================================ MOBILE DEVICES ==================================*/
+@media (max-width: 678px) {
+  h2 {
+    font-size: 33px;
+  }
+
+  h5 {
+    font-size: 14px !important;
+  }
+
+  .section-padding {
+    padding: 2rem !important;
+  }
+
+  .box-padding {
+    padding: 2rem !important;
+  }
+
+  .slick-dots {
+    bottom: -70px;
+  }
+
+  .header-sticky, .header-static {
+    position: relative;
+    background-color: #2a0041;
+  }
+
+  header .header-logo .img-fluid {
+    width: 60%;
+  }
+  header .header-menu {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin-top: 1rem;
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
+    background-color: transparent;
+  }
+  header .header-menu .nav-link {
+    font-size: 1.5rem !important;
+  }
+
+  .hero {
+    height: 500px !important;
+  }
+
+  .item-service {
+    padding: 3rem 2rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .about-us-left-img {
+    display: none;
+  }
+  .about-us-right-content {
+    padding: 7em 3em;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .slick-arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .testimonies button.slick-next, .testimonies button.slick-next:hover {
+    right: 0;
+  }
+  .testimonies button.slick-prev, .testimonies button.slick-prev:hover {
+    left: 0;
+  }
+  .testimonies .card-block {
+    padding: 0.3rem;
+  }
+  .testimonies .card-block h4 {
+    font-family: JosefinSans;
+    color: #ffffff;
+    padding-top: 1.5rem;
+  }
+  .testimonies .card-block span {
+    color: #a623cc;
+  }
+  .testimonies .card-block p {
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .our-services {
+    background-size: cover;
+  }
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+  .contact-left-img-container {
+    padding: 1rem 0;
+    margin: 2rem;
+  }
+  .contact-left-img-container a {
+    font-size: 1rem;
+  }
+
+  .hero.hero-pages {
+    height: 400px !important;
+  }
+
+  .section-video {
+    transform: translateY(0);
+    margin-top: 2rem;
+  }
+
+  .video-iframe {
+    height: 200px !important;
+  }
+
+  .contact-right-content .container {
+    padding: 0 !important;
+  }
+
+  .hero.hero-pages {
+    padding-top: 3rem;
+    height: 200px !important;
+  }
+
+  .advisory {
+    margin-top: -14em;
+  }
+  .advisory .container .advisory-title h3 {
+    font-size: 1.5rem;
+  }
+
+  #bg-contacto {
+    height: 300px !important;
+  }
+  #bg-contacto .hero-subtitle {
+    margin-bottom: 0;
+  }
+
+  .contact-page-left-img-container {
+    padding: 1rem 0;
+    margin: 0 !important;
+  }
+  .contact-page-left-img-container a {
+    font-size: 19px !important;
+  }
+  .contact-page-right-content .container {
+    padding: 0 !important;
+  }
+  .contact-page-right-content .container h2 {
+    font-size: 35px !important;
+  }
+  .contact-page-right-content .container form a {
+    border-radius: unset;
+  }
+  .contact-page-right-content .container form p {
+    padding: 20px;
+  }
+  .contact-page-right-content .container form .form-check-input {
+    height: 20px;
+    width: 20px;
+  }
+  .contact-page-right-content .container form .form-check-label {
+    padding-left: 10px;
+  }
+
+  footer {
+    background: #000000;
+  }
+  footer .footer-container {
+    padding: 20px;
+    padding-bottom: 7rem;
+  }
+}
+/*================================ TABLET DEVICES ==================================*/
+/*================================ DESKTOP DEVICES ==================================*/
+@media (min-width: 1025px) {
+  .fixed-header {
+    background-color: black;
+    padding: 1rem 2rem;
+  }
+
+  #sobre-nosotros .slick-dots {
+    bottom: -150px;
+  }
+
+  .about-us-right-content {
+    padding: 10em 6em;
+  }
+
+  .testimonies button.slick-next, .testimonies button.slick-next:hover {
+    right: 280px;
+  }
+  .testimonies button.slick-prev, .testimonies button.slick-prev:hover {
+    left: 280px;
+  }
+
+  .contact-left-img-container {
+    padding: 4rem;
+    margin: 5rem;
+    height: 80%;
+  }
+  .contact-left-img-container a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Sarabun;
+  }
+
+  /*PAGES*/
+  footer {
+    height: 85px;
+    padding-top: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

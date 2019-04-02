@@ -1,6 +1,7 @@
 @import "_variables.scss";
 @import "_typography.scss";
 @import "_slick-slider.scss";
+@import 'mixins';
 
 html{
     overflow-x: hidden;
@@ -162,9 +163,6 @@ header {
     }
 }
 .features {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     h6 {
         font-family: JosefinSansBold;
         font-size: 23px;
@@ -176,15 +174,6 @@ header {
     img{
         color: $dark-pink;
         width: 60px;
-    }
-    &-experiencia {
-        max-width: 30rem;
-    }
-    &-responsabilidad {
-        max-width: 30rem;
-    }
-    &-alegria {
-        max-width: 30rem;
     }
 }
 
@@ -356,7 +345,6 @@ header {
 /*CONTACT SECTION*/
 .contact {
     padding: 0;
-    display: flex;
     &-left-img {
         background-image: url(../img/bg-left-contact.png);
         padding: 0;
@@ -610,6 +598,11 @@ button.slick-next, button.slick-next:hover {
                 text-decoration: none;
                 font-size: 25px;
                 font-family: Sarabun;
+                transition: all .3s;
+
+                &:hover{
+                    opacity: .6;
+                }
             }
     
             .text-left {
@@ -769,5 +762,11 @@ button.slick-next, button.slick-next:hover {
     h2{
         color: $dark-purple;
     }
+
+    p {
+        color: $gray;
+    }
   }
 
+//RESPONSIVE
+@import 'responsive';

@@ -1,8 +1,5 @@
 
-@import "_variables.scss";
-@import "_typography.scss";
-@import "_mixins.scss";
-@import "_slick-slider.scss";
+
 /*================================ MOBILE DEVICES ==================================*/
 
 @include breakpoint(mobile) {
@@ -134,6 +131,11 @@
     .hero.hero-pages{
         height: 400px !important;
     }
+
+    .section-video{
+        transform: translateY(0);
+        margin-top: 2rem;
+    }
   
     .video-iframe{
         height: 200px !important;
@@ -142,8 +144,9 @@
        padding: 0 !important;
     }
 
-    .hero-pages {
-      height: 480px !important;
+    .hero.hero-pages {
+      padding-top: 3rem;  
+      height: 200px !important;
     }
 
     .advisory {

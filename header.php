@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="src/css/slick-theme.css"/>
     <link rel="stylesheet" href="src/css/lightbox.css">   
     <link href="src/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 <body id="<?php echo $idSection ?>">
     <header class="<?php echo $clSection; ?>">
