@@ -192,10 +192,25 @@ header {
    
 }
 
+.container-item-service{
+    height: 400px;
+    overflow: hidden;
+
+    .img-fluid{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+     }
+}
 
 .item-service {
     padding: 6rem 2rem;
     background-color: rgba(0, 0, 0, 0.57);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     i {
         font-size: 35px;
@@ -207,25 +222,7 @@ header {
         color: $white;
     }
 
-    &-interior{
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
-}
-
-#interior{
-    &-fotografia{
-        background-image: url('../img/bg-photography.png');
-    }
-
-    &-sonido {
-        background-image: url('../img/bg-sound.png');
-    }
     
-    &-iluminacion {
-        background-image: url('../img/bg-ilumination.png')
-    }
 }
 
 

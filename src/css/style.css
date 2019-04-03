@@ -329,9 +329,23 @@ header .header-menu .menu-nav-social .nav-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.container-item-service {
+  height: 400px;
+  overflow: hidden;
+}
+.container-item-service .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .item-service {
   padding: 6rem 2rem;
   background-color: rgba(0, 0, 0, 0.57);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .item-service i {
   font-size: 35px;
@@ -341,20 +355,6 @@ header .header-menu .menu-nav-social .nav-link:hover {
   font-family: JosefinSansBold;
   font-size: 35px;
   color: #ffffff;
-}
-.item-service-interior {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#interior-fotografia {
-  background-image: url("../img/bg-photography.png");
-}
-#interior-sonido {
-  background-image: url("../img/bg-sound.png");
-}
-#interior-iluminacion {
-  background-image: url("../img/bg-ilumination.png");
 }
 
 /*SLIDER STYLE*/
@@ -965,6 +965,11 @@ button.slick-prev, button.slick-prev:hover {
 
   .hero.hero-pages {
     height: 400px !important;
+  }
+
+  .container-item-service {
+    height: 280px;
+    margin-bottom: 2rem;
   }
 
   .section-video {
